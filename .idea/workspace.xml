@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java-project-99.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/checkstyle/checkstyle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/AppApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/controller/WelcomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/hexlet/code/AppApplicationTests.java" beforeDir="false" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="done step 1!!!">
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-production.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/AppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +80,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/dariakarpova/Desktop/java/java-project-99",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.11609195"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../" />
     </key>
@@ -140,6 +133,26 @@
       <option name="presentableId" value="Default" />
       <updated>1725379681795</updated>
     </task>
+    <task id="LOCAL-00001" summary="update step 1 completely">
+      <created>1725382614106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725382614106</updated>
+    </task>
+    <task id="LOCAL-00002" summary="done step 1!!!">
+      <created>1725383365451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725383365451</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update step 1 completely" />
+    <MESSAGE value="done step 1!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="done step 1!!!" />
   </component>
 </project>
