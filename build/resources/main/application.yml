@@ -4,7 +4,7 @@ spring:
     hibernate:
       ddl-auto: update
   profiles:
-    active: dev
+    active: production
   output:
     ansi:
       enabled: always
