@@ -1,9 +1,9 @@
 setup:
-	./gradlew wrapper --gradle-version 8.3
+	./gradlew wrapper --gradle-version 8.7
 	./gradlew build
 
 app:
-	./gradlew bootRun --args='--spring.profiles.active=stage'
+	./gradlew bootRun --args='--spring.profiles.active=dev'
 
 clean:
 	./gradlew clean

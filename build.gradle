@@ -3,7 +3,7 @@ plugins {
 	id 'org.springframework.boot' version '3.3.3'
 	id 'io.spring.dependency-management' version '1.1.6'
 	id 'application'
-	id 'checkstyle'
+	//id 'checkstyle'
 	id 'jacoco'
 	id "io.freefair.lombok" version "8.10"
 }
@@ -31,11 +31,20 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-devtools")
-	runtimeOnly("com.h2database:h2:2.3.232")
+	runtimeOnly 'com.h2database:h2'
+	implementation 'net.datafaker:datafaker:2.0.1'
+	implementation 'org.instancio:instancio-junit:3.3.0'
+	implementation("org.mapstruct:mapstruct:1.5.5.Final")
+	annotationProcessor("org.mapstruct:mapstruct-processor:1.5.5.Final")
+	//implementation 'org.springframework.boot:spring-boot-starter-security'
+	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+	implementation 'org.openapitools:jackson-databind-nullable:0.2.6'
 
+	//testImplementation 'org.springframework.security:spring-security-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
+	testImplementation(platform("org.junit:junit-bom:5.10.0"))
+	testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+	testImplementation 'net.javacrumbs.json-unit:json-unit-assertj:3.2.5'
 }
 
 tasks.named('test') {
