@@ -3,8 +3,8 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-#  profiles:
-#    active: production
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}
   output:
     ansi:
       enabled: always
