@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hexlet.code.controller.api.UsersControllerTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-09-05T18:40:51" hostname="MacBook-Air-Dara.local" time="4.311">
+  <properties/>
+  <testcase name="testWelcomePage()" classname="hexlet.code.controller.api.UsersControllerTests" time="3.521"/>
+  <testcase name="testGetList()" classname="hexlet.code.controller.api.UsersControllerTests" time="0.361"/>
+  <testcase name="testGetUser()" classname="hexlet.code.controller.api.UsersControllerTests" time="0.086"/>
+  <testcase name="testDeleteUser()" classname="hexlet.code.controller.api.UsersControllerTests" time="0.034"/>
+  <testcase name="testCreate()" classname="hexlet.code.controller.api.UsersControllerTests" time="0.151"/>
+  <testcase name="testUpdate()" classname="hexlet.code.controller.api.UsersControllerTests" time="0.141"/>
+  <system-out><![CDATA[?[2m2024-09-05T21:40:49.242+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.UsersControllerTests]: UsersControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+?[2m2024-09-05T21:40:49.286+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.UsersControllerTests
+?[2m2024-09-05T21:40:49.295+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.d.r.RestartApplicationListener    ?[0;39m ?[2m:?[0;39m Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+?[32m :: Spring Boot :: ?[39m              ?[2m (v3.3.3)?[0;39m
+
+?[2m2024-09-05T21:40:49.374+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mh.c.controller.api.UsersControllerTests ?[0;39m ?[2m:?[0;39m Starting UsersControllerTests using Java 21.0.2 with PID 13259 (started by dariakarpova in /Users/dariakarpova/Desktop/java/java-project-99)
+?[2m2024-09-05T21:40:49.375+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mh.c.controller.api.UsersControllerTests ?[0;39m ?[2m:?[0;39m The following 1 profile is active: "dev"
+?[2m2024-09-05T21:40:49.826+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[2m2024-09-05T21:40:49.851+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+?[2m2024-09-05T21:40:50.138+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+?[2m2024-09-05T21:40:50.143+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.h.c.internal.RegionFactoryInitiator   ?[0;39m ?[2m:?[0;39m HHH000026: Second-level cache disabled
+?[2m2024-09-05T21:40:50.163+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.o.j.p.SpringPersistenceUnitInfo     ?[0;39m ?[2m:?[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+?[2m2024-09-05T21:40:50.164+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-2 - Starting...
+?[2m2024-09-05T21:40:50.169+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=DEV
+?[2m2024-09-05T21:40:50.170+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-2 - Start completed.
+?[2m2024-09-05T21:40:50.171+03:00?[0;39m ?[33m WARN?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36morg.hibernate.orm.deprecation           ?[0;39m ?[2m:?[0;39m HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+?[2m2024-09-05T21:40:50.350+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.h.e.t.j.p.i.JtaPlatformInitiator      ?[0;39m ?[2m:?[0;39m HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+?[2m2024-09-05T21:40:50.361+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[2m2024-09-05T21:40:50.679+03:00?[0;39m ?[33m WARN?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mJpaBaseConfiguration$JpaWebConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[2m2024-09-05T21:40:51.149+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-05T21:40:51.150+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-05T21:40:51.158+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 4 ms
+?[2m2024-09-05T21:40:51.189+03:00?[0;39m ?[32m INFO?[0;39m ?[35m13259?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mh.c.controller.api.UsersControllerTests ?[0;39m ?[2m:?[0;39m Started UsersControllerTests in 1.895 seconds (process running for 25.454)
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select count(*) from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: delete from users where id=?
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0
+Hibernate: select count(*) from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: delete from users where id=?
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: select count(*) from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: delete from users where id=?
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: delete from users where id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: select count(*) from users u1_0 where u1_0.id=?
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: select count(*) from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: delete from users where id=?
+Hibernate: insert into users (created_at,email,first_name,last_name,password,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: update users set created_at=?,email=?,first_name=?,last_name=?,password=?,updated_at=? where id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: select count(*) from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at from users u1_0 where u1_0.id=?
+Hibernate: delete from users where id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
