@@ -1,10 +1,12 @@
 package hexlet.code.mapper;
 
-import hexlet.code.dto.UserCreateDTO;
-import hexlet.code.dto.UserDTO;
-import hexlet.code.dto.UserUpdateDTO;
+import hexlet.code.dto.users.UserCreateDTO;
+import hexlet.code.dto.users.UserDTO;
+import hexlet.code.dto.users.UserUpdateDTO;
 import hexlet.code.model.User;
 import org.mapstruct.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Mapper(
@@ -15,10 +17,24 @@ import org.mapstruct.*;
 )
 public abstract class UsersMapper {
 
-//    @Mapping(target = "", source = "")
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Mapping(target = "passwordDigest", source = "password")
     public abstract User map(UserCreateDTO createDTO);
-  //  @Mapping(target = "", source = "")
+
+    public abstract User map(UserUpdateDTO model);
+
+    @Mapping(target = "password", ignore = true)
     public abstract UserDTO map(User user);
-  //  @Mapping(target = "", source = "")
+
+    public abstract User map(UserDTO model);
+
     public abstract void update(UserUpdateDTO updateDTO, @MappingTarget User user);
+
+    @BeforeMapping
+    public void hashPassword(UserCreateDTO data) {
+        var password = data.getPassword();
+        data.setPassword(passwordEncoder.encode(password));
+    }
 }

@@ -5,7 +5,11 @@ spring:
       ddl-auto: update
   profiles:
     active: ${SPRING_PROFILES_ACTIVE}
+#    active: dev
   output:
     ansi:
       enabled: always
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
 

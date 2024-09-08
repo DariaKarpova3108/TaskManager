@@ -1,8 +1,8 @@
 package hexlet.code.mapper;
 
-import hexlet.code.dto.UserCreateDTO;
-import hexlet.code.dto.UserDTO;
-import hexlet.code.dto.UserUpdateDTO;
+import hexlet.code.dto.users.UserCreateDTO;
+import hexlet.code.dto.users.UserDTO;
+import hexlet.code.dto.users.UserUpdateDTO;
 import hexlet.code.model.User;
 import javax.annotation.processing.Generated;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-09-05T23:43:28+0300",
+    date = "2024-09-08T17:15:08+0300",
     comments = "version: 1.5.5.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-8.7.jar, environment: Java 21.0.2 (Oracle Corporation)"
 )
 @Component
@@ -21,16 +21,39 @@ public class UsersMapperImpl extends UsersMapper {
 
     @Override
     public User map(UserCreateDTO createDTO) {
+        hashPassword( createDTO );
+
         if ( createDTO == null ) {
             return null;
         }
 
         User user = new User();
 
+        user.setPasswordDigest( createDTO.getPassword() );
         user.setFirstName( createDTO.getFirstName() );
         user.setLastName( createDTO.getLastName() );
         user.setEmail( createDTO.getEmail() );
-        user.setPassword( createDTO.getPassword() );
+
+        return user;
+    }
+
+    @Override
+    public User map(UserUpdateDTO model) {
+        if ( model == null ) {
+            return null;
+        }
+
+        User user = new User();
+
+        if ( jsonNullableMapper.isPresent( model.getFirstName() ) ) {
+            user.setFirstName( jsonNullableMapper.unwrap( model.getFirstName() ) );
+        }
+        if ( jsonNullableMapper.isPresent( model.getLastName() ) ) {
+            user.setLastName( jsonNullableMapper.unwrap( model.getLastName() ) );
+        }
+        if ( jsonNullableMapper.isPresent( model.getEmail() ) ) {
+            user.setEmail( jsonNullableMapper.unwrap( model.getEmail() ) );
+        }
 
         return user;
     }
@@ -47,11 +70,28 @@ public class UsersMapperImpl extends UsersMapper {
         userDTO.setFirstName( user.getFirstName() );
         userDTO.setLastName( user.getLastName() );
         userDTO.setEmail( user.getEmail() );
-        userDTO.setPassword( user.getPassword() );
         userDTO.setCreatedAt( user.getCreatedAt() );
         userDTO.setUpdatedAt( user.getUpdatedAt() );
 
         return userDTO;
+    }
+
+    @Override
+    public User map(UserDTO model) {
+        if ( model == null ) {
+            return null;
+        }
+
+        User user = new User();
+
+        user.setId( model.getId() );
+        user.setFirstName( model.getFirstName() );
+        user.setLastName( model.getLastName() );
+        user.setEmail( model.getEmail() );
+        user.setCreatedAt( model.getCreatedAt() );
+        user.setUpdatedAt( model.getUpdatedAt() );
+
+        return user;
     }
 
     @Override
@@ -68,9 +108,6 @@ public class UsersMapperImpl extends UsersMapper {
         }
         if ( jsonNullableMapper.isPresent( updateDTO.getEmail() ) ) {
             user.setEmail( jsonNullableMapper.unwrap( updateDTO.getEmail() ) );
-        }
-        if ( jsonNullableMapper.isPresent( updateDTO.getPassword() ) ) {
-            user.setPassword( jsonNullableMapper.unwrap( updateDTO.getPassword() ) );
         }
     }
 }
