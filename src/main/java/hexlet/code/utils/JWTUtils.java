@@ -7,16 +7,14 @@ import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
-import java.util.List;
+
 
 @Component
 public class JWTUtils {
     @Autowired
     private JwtEncoder jwtEncoder;
 
-
-    //добавила List<String> roles и утверждение про роли в генерацию токена
-    public String generateToken(String email, List<String> roles ) {
+    public String generateToken(String email) {
         Instant now = Instant.now();
         JwtClaimsSet claims = JwtClaimsSet.builder()
                 .issuer("AuthServer")

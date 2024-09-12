@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class CustomUserDetailsService implements UserDetailsManager {
 
+    //совместить два сервиса для юзеров в один сюда
+
     @Autowired
     private UsersRepository usersRepository;
 
@@ -34,7 +36,8 @@ public class CustomUserDetailsService implements UserDetailsManager {
         user.setPasswordDigest(hashedPassword);
         usersRepository.save(user);
     }
-//пока есть вопрос нужно ли и если да то верно ли реализована логика переопределения методов ниже
+
+    //пока есть вопрос нужно ли и если да то верно ли реализована логика переопределения методов ниже
     @Override
     public void updateUser(UserDetails userdata) {
         var user = usersRepository.findByEmail(userdata.getUsername())

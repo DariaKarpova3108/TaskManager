@@ -27,23 +27,11 @@ public class AuthenticationController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
-    @Autowired
-    private CustomUserDetailsService userDetailsService;
-
     @PostMapping("/login")
     public String create(@Valid @RequestBody AuthRequest authRequest) {
         var athentication = new UsernamePasswordAuthenticationToken(
                 authRequest.getUsername(), authRequest.getPassword());
         authenticationManager.authenticate(athentication);
-
-//        добавила логику для проверки роли пользователя
-        UserDetails userDetails = userDetailsService.loadUserByUsername(authRequest.getUsername());
-        List<String> roles = userDetails.getAuthorities().stream()
-                .map(GrantedAuthority::getAuthority)
-                .toList();
-
-        var token = jwtUtils.generateToken(authRequest.getUsername(), roles);
-
-        return token;
+        return jwtUtils.generateToken(authRequest.getUsername());
     }
 }
