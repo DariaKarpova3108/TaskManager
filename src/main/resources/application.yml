@@ -5,7 +5,6 @@ spring:
       ddl-auto: update
   profiles:
     active: ${SPRING_PROFILES_ACTIVE}
-#    active: dev
   output:
     ansi:
       enabled: always
