@@ -1,8 +1,13 @@
 package hexlet.code.controller.api.users;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hexlet.code.dto.users.UserUpdateDTO;
+import hexlet.code.dto.task.TaskCreateDTO;
+import hexlet.code.dto.task.TaskUpdateDTO;
+import hexlet.code.model.Task;
+import hexlet.code.model.TaskStatus;
 import hexlet.code.model.User;
+import hexlet.code.repository.TaskRepository;
+import hexlet.code.repository.TaskStatusRepository;
 import hexlet.code.repository.UsersRepository;
 import hexlet.code.util.ModelGenerator;
 import org.instancio.Instancio;
@@ -31,22 +36,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
-public class UsersControllerTests {
+public class TaskControllerTests {
     @Autowired
     private WebApplicationContext webApplicationContext;
-
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private UsersRepository usersRepository;
 
     @Autowired
     private ObjectMapper objectMapper;
 
     @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
     private ModelGenerator modelGenerator;
 
+    @Autowired
+    private TaskRepository taskRepository;
+    @Autowired
+    private TaskStatusRepository statusRepository;
+
+    @Autowired
+    private UsersRepository usersRepository;
+
+    private Task task;
+    private TaskStatus taskStatus;
     private User user;
     private SecurityMockMvcRequestPostProcessors.JwtRequestPostProcessor token;
 
@@ -57,38 +69,30 @@ public class UsersControllerTests {
                 .apply(SecurityMockMvcConfigurers.springSecurity())
                 .build();
 
-        token = jwt().jwt(builder -> builder.subject("hexlet@example.com"));
-
+        task = Instancio.of(modelGenerator.getTaskModel()).create();
+        taskStatus = Instancio.of(modelGenerator.getTaskStatusModel()).create();
         user = Instancio.of(modelGenerator.getUserModel()).create();
-        usersRepository.save(user);
 
+        usersRepository.save(user);
+        statusRepository.save(taskStatus);
+
+        task.setTaskStatus(taskStatus);
+        task.setAssignee(user);
+
+        taskRepository.save(task);
+        token = jwt().jwt(builder -> builder.subject("hexlet@example.com"));
     }
 
 //    @AfterEach
 //    public void cleanUp() {
-//        if (user != null && user.getId() != null && usersRepository.existsById(user.getId())) {
-//            usersRepository.delete(user);
+//        if (task != null && task.getId() != null && taskRepository.existsById(task.getId())) {
+//            taskRepository.delete(task);
 //        }
 //    }
 
     @Test
-    public void testGetUser() throws Exception {
-        var request = get("/api/users/" + user.getId())
-                .with(jwt().jwt(builder -> builder.subject(user.getEmail())));
-        var result = mockMvc.perform(request)
-                .andExpect(status().isOk())
-                .andReturn();
-
-        var body = result.getResponse().getContentAsString();
-
-        assertThatJson(body).and(
-                e -> e.node("email").isEqualTo(user.getEmail())
-        );
-    }
-
-    @Test
-    public void testGetList() throws Exception {
-        var request = get("/api/users").with(token);
+    public void getListTask() throws Exception {
+        var request = get("/api/tasks").with(token);
         var result = mockMvc.perform(request)
                 .andExpect(status().isOk())
                 .andReturn();
@@ -97,44 +101,56 @@ public class UsersControllerTests {
     }
 
     @Test
-    public void testCreate() throws Exception {
-        var request = post("/api/users")
-                .with(token)
+    public void getTask() throws Exception {
+        var request = get("/api/tasks/" + task.getId()).with(token);
+        var result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn();
+        var body = result.getResponse().getContentAsString();
+        assertThat(body).isNotNull();
+        assertThatJson(body).and(v -> v.node("id").isEqualTo(task.getId()));
+    }
+
+    @Test
+    public void createTask() throws Exception {
+        var createDTO = new TaskCreateDTO();
+        createDTO.setTitle(task.getName());
+        createDTO.setContent(task.getDescription());
+        createDTO.setIndex(task.getIndex());
+        createDTO.setAssigneeId(user.getId());
+        createDTO.setStatus(task.getTaskStatus().getSlug());
+        var request = post("/api/tasks").with(token)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(user));
+                .content(objectMapper.writeValueAsString(createDTO));
         mockMvc.perform(request)
                 .andExpect(status().isCreated());
 
-        var createdUser = usersRepository.findById(user.getId()).get();
-        assertThat(createdUser).isNotNull();
-        assertThat(createdUser.getEmail()).isEqualTo(user.getEmail());
+        var createdTask = taskRepository.findById(task.getId()).get();
+        assertThat(createdTask).isNotNull();
+        assertThat(createdTask.getName()).isEqualTo(createDTO.getTitle());
     }
 
-
     @Test
-    public void testUpdate() throws Exception {
-        var dto = new UserUpdateDTO();
-        dto.setFirstName(JsonNullable.of("newFirstName"));
+    public void updateTask() throws Exception {
+        var updateDTO = new TaskUpdateDTO();
+        updateDTO.setTitle(JsonNullable.of("newName"));
 
-        var request = put("/api/users/" + user.getId())
-                .with(jwt().jwt(builder -> builder.subject(user.getEmail())))
+        var request = put("/api/tasks/" + task.getId()).with(token)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(dto));
+                .content(objectMapper.writeValueAsString(updateDTO));
 
         mockMvc.perform(request)
                 .andExpect(status().isOk());
 
-        var updatedUser = usersRepository.findById(user.getId()).get();
-        assertThat(updatedUser.getFirstName()).isEqualTo("newFirstName");
+        var updatedTask = taskRepository.findById(task.getId()).get();
+        assertThat(updatedTask.getName()).isEqualTo("newName");
     }
 
     @Test
-    public void testDeleteUser() throws Exception {
-        var request = delete("/api/users/" + user.getId())
-                .with(jwt().jwt(builder -> builder.subject(user.getEmail())));
+    public void deleteTask() throws Exception {
+        var request = delete("/api/tasks/" + task.getId()).with(token);
         mockMvc.perform(request)
                 .andExpect(status().isNoContent());
-        assertThat(usersRepository.findById(user.getId())).isEmpty();
+        assertThat(taskRepository.findById(task.getId())).isEmpty();
     }
 }
-

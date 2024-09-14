@@ -40,12 +40,18 @@ public class TaskStatusService {
     }
 
     public TaskStatusDTO create(TaskStatusCreateDTO createDTO) {
+        if (taskStatusRepository.existsBySlug(createDTO.getSlug())) {
+            throw new IllegalArgumentException("Статус с таким слагом уже существует");
+        }
         var model = taskStatusMapper.map(createDTO);
         taskStatusRepository.save(model);
         return taskStatusMapper.map(model);
     }
 
     public void delete(Long id) {
+//        if (taskStatusRepository.existsByTaskListIsNotEmpty(id)) {
+//            throw new IllegalArgumentException("Статус не может быть удален, так как он связан с задачами");
+//        }
         taskStatusRepository.deleteById(id);
     }
 }

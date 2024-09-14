@@ -1,6 +1,5 @@
 package hexlet.code.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -13,40 +12,45 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
-@Table(name = "task_statuses")
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@ToString(onlyExplicitlyIncluded = true, includeFieldNames = true)
+@Table(name = "tasks")
 @EntityListeners(AuditingEntityListener.class)
+@ToString(onlyExplicitlyIncluded = true, includeFieldNames = true)
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Getter
 @Setter
-public class TaskStatus implements BaseEntity {
+public class Task implements BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     @ToString.Include
     private Long id;
 
+    @NotNull
     @Size(min = 1)
     @ToString.Include
-    @NotNull
     private String name;
 
-    @Size(min = 1)
-    @Column(unique = true, nullable = false)
     @ToString.Include
-    @EqualsAndHashCode.Include
-    private String slug;
+    private Integer index;
+
+    @Column(columnDefinition = "TEXT")
+    @ToString.Include
+    private String description;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "task_status", referencedColumnName = "slug", nullable = false)
+    @ToString.Include
+    private TaskStatus taskStatus;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "assignee_id", referencedColumnName = "id")
+    @ToString.Include
+    private User assignee;
 
     @CreatedDate
-    @ToString.Include
     @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @ToString.Include
     private LocalDate createdAt;
-//
-//    @OneToMany(mappedBy = "taskStatus", fetch = FetchType.LAZY)
-//    @JsonIgnore
-//    private List<Task> taskList = new ArrayList<>();
 }

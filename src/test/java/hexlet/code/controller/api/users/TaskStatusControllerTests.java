@@ -5,7 +5,6 @@ import hexlet.code.model.TaskStatus;
 import hexlet.code.repository.TaskStatusRepository;
 import hexlet.code.util.ModelGenerator;
 import org.instancio.Instancio;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,14 +58,14 @@ public class TaskStatusControllerTests {
         token = jwt().jwt(builder -> builder.subject("hexlet@example.com"));
     }
 
-    @AfterEach
-    public void cleanUp() {
-        if (taskStatusModel != null && taskStatusModel.getId() != null
-                && taskStatusRepository.existsBySlug(taskStatusModel.getSlug())
-                && taskStatusRepository.existsById(taskStatusModel.getId())) {
-            taskStatusRepository.delete(taskStatusModel);
-        }
-    }
+//    @AfterEach
+//    public void cleanUp() {
+//        if (taskStatusModel != null && taskStatusModel.getId() != null
+//                && taskStatusRepository.existsBySlug(taskStatusModel.getSlug())
+//                && taskStatusRepository.existsById(taskStatusModel.getId())) {
+//            taskStatusRepository.delete(taskStatusModel);
+//        }
+//    }
 
     @Test
     public void getListTaskStatuses() throws Exception {

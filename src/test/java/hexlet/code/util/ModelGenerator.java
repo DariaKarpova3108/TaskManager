@@ -1,5 +1,6 @@
 package hexlet.code.util;
 
+import hexlet.code.model.Task;
 import hexlet.code.model.TaskStatus;
 import hexlet.code.model.User;
 import hexlet.code.repository.TaskStatusRepository;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Component;
 public class ModelGenerator {
     private Model<User> userModel;
     private Model<TaskStatus> taskStatusModel;
+    private Model<Task> taskModel;
 
     @Autowired
     private Faker faker;
@@ -38,6 +40,15 @@ public class ModelGenerator {
                 .ignore(Select.field(TaskStatus::getId))
                 .supply(Select.field(TaskStatus::getName), () -> faker.name().title())
                 .supply(Select.field(TaskStatus::getSlug), this::generateUniqueSlug)
+                .toModel();
+
+        taskModel = Instancio.of(Task.class)
+                .ignore(Select.field(Task::getId))
+                .supply(Select.field(Task::getName), () -> faker.name().title())
+                .supply(Select.field(Task::getDescription), () -> faker.lorem().paragraph())
+                .supply(Select.field(Task::getIndex), () -> faker.number().numberBetween(1, 100))
+                .ignore(Select.field(Task::getTaskStatus))
+                .ignore(Select.field(Task::getAssignee))
                 .toModel();
     }
 

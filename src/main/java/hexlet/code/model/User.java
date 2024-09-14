@@ -12,6 +12,7 @@ import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -52,10 +53,16 @@ public class User implements BaseEntity, UserDetails {
 
     @CreatedDate
     @ToString.Include
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate createdAt;
 
     @LastModifiedDate
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate updatedAt;
+
+//    @OneToMany(mappedBy = "assignee", fetch = FetchType.LAZY)
+//    @JsonIgnore
+//    private List<Task> taskListAssignee = new ArrayList<>();
 
 
     @Override
