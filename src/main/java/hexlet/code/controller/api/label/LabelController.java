@@ -7,6 +7,7 @@ import hexlet.code.service.LabelService.LabelService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,9 +19,10 @@ public class LabelController {
     private LabelService labelService;
 
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public List<LabelDTO> getListLabels() {
-        return labelService.getListLabels();
+    public ResponseEntity<List<LabelDTO>> getListLabels() {
+        return ResponseEntity.ok()
+                .header("X-Total-Count", String.valueOf(labelService.getListLabels().size()))
+                .body(labelService.getListLabels());
     }
 
     @GetMapping("/{id}")

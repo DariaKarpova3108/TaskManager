@@ -31,7 +31,7 @@ public abstract class UsersMapper {
 
     public abstract User map(UserUpdateDTO model);
 
-    @Mapping(target = "password", ignore = true)
+  //  @Mapping(target = "password", ignore = true)
     public abstract UserDTO map(User user);
 
     public abstract User map(UserDTO model);

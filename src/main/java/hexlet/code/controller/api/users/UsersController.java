@@ -7,6 +7,7 @@ import hexlet.code.service.UserService.UsersService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,9 +21,10 @@ public class UsersController {
     private UsersService usersService;
 
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public List<UserDTO> getList() {
-        return usersService.getAll();
+    public ResponseEntity<List<UserDTO>> getList() {
+        return ResponseEntity.ok()
+                .header("X-Total-Count", String.valueOf(usersService.getAll().size()))
+                .body(usersService.getAll());
     }
 
     @GetMapping("/{id}")
