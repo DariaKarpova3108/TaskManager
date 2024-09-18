@@ -1,8 +1,10 @@
 package hexlet.code.util;
 
+import hexlet.code.model.Label;
 import hexlet.code.model.Task;
 import hexlet.code.model.TaskStatus;
 import hexlet.code.model.User;
+import hexlet.code.repository.LabelsRepository;
 import hexlet.code.repository.TaskStatusRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
@@ -19,12 +21,16 @@ public class ModelGenerator {
     private Model<User> userModel;
     private Model<TaskStatus> taskStatusModel;
     private Model<Task> taskModel;
+    private Model<Label> labelModel;
 
     @Autowired
     private Faker faker;
 
     @Autowired
     private TaskStatusRepository taskStatusRepository;
+
+    @Autowired
+    private LabelsRepository labelsRepository;
 
     @PostConstruct
     private void generate() {
@@ -49,6 +55,13 @@ public class ModelGenerator {
                 .supply(Select.field(Task::getIndex), () -> faker.number().numberBetween(1, 100))
                 .ignore(Select.field(Task::getTaskStatus))
                 .ignore(Select.field(Task::getAssignee))
+                .ignore(Select.field(Task::getLabels))
+                .toModel();
+
+        labelModel = Instancio.of(Label.class)
+                .ignore(Select.field(Label::getId))
+                .supply(Select.field(Label::getName), this::generateUniqueName)
+                .ignore(Select.field(Label::getTasks))
                 .toModel();
     }
 
@@ -58,5 +71,19 @@ public class ModelGenerator {
             return generateUniqueSlug();
         }
         return slug;
+    }
+
+    private String generateUniqueName() {
+        String nameLabel;
+        int i = 0;
+        int step = 100;
+
+        do {
+            nameLabel = faker.name().title();
+            i++;
+            if (nameLabel.length() < 3 || labelsRepository.existsByName(nameLabel)) continue;
+            return nameLabel;
+        } while (i < step);
+        throw new IllegalStateException("Failed to generate unique name after " + step + " attempts");
     }
 }

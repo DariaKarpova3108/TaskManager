@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="completed step 6))) (with model TaskStatus.java)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskCreateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/TaskMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskService/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ConfigGenerateBeanFaker.java" afterDir="false" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="almost done step 7))) (with model TaskS.java)&#10;resolve the communication issue OneToMany">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/label/LabelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/label/LabelCreateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/label/LabelDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/label/LabelUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/LabelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/LabelsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/service/LabelService/LabelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/LabelControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,11 +22,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/AppApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/component/DataInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/component/DataInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/dto/users/UserUpdateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/dto/users/UserUpdateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/mapper/UsersMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/mapper/UsersMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/AppApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/UsersControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/UsersControllerTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/util/ModelGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/util/ModelGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/JsonNullableMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/JsonNullableMapperImpl.java" afterDir="false" />
@@ -45,12 +46,24 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/AppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/component/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/component/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/taskStatus/TaskStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/taskStatus/TaskStatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskCreateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/users/UserUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/users/UserUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/TaskMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/TaskStatusMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/TaskStatusMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/mapper/UsersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/model/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/TaskStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskStatusRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskStatusRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskStatusService/TaskStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskStatusService/TaskStatusService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/service/UserService/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/service/UserService/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" afterDir="false" />
@@ -155,6 +168,54 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.java-project-99 [test]">
+    <configuration name="LabelControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hexlet.code.controller.api.users.LabelControllerTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="LabelControllerTests.updateLabel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hexlet.code.controller.api.users.LabelControllerTests.updateLabel&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="TaskControllerTests.createTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -179,76 +240,26 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="TaskControllerTests.getTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="java-project-99 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getTask&quot;" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="UsersControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hexlet.code.controller.api.users.UsersControllerTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="UsersControllerTests.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hexlet.code.controller.api.users.UsersControllerTests.testUpdate&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="java-project-99 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -274,19 +285,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.LabelControllerTests" />
+      <item itemvalue="Gradle.LabelControllerTests.updateLabel" />
       <item itemvalue="Gradle.TaskControllerTests.createTask" />
-      <item itemvalue="Gradle.TaskControllerTests.getTask" />
-      <item itemvalue="Gradle.UsersControllerTests" />
-      <item itemvalue="Gradle.UsersControllerTests.testUpdate" />
+      <item itemvalue="Gradle.java-project-99 [clean]" />
       <item itemvalue="Gradle.java-project-99 [test]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.java-project-99 [test]" />
-        <item itemvalue="Gradle.UsersControllerTests" />
-        <item itemvalue="Gradle.UsersControllerTests.testUpdate" />
-        <item itemvalue="Gradle.TaskControllerTests.getTask" />
         <item itemvalue="Gradle.TaskControllerTests.createTask" />
+        <item itemvalue="Gradle.java-project-99 [clean]" />
+        <item itemvalue="Gradle.LabelControllerTests" />
+        <item itemvalue="Gradle.LabelControllerTests.updateLabel" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726256111598</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="almost done step 7))) (with model TaskS.java)&#10;resolve the communication issue OneToMany">
+      <created>1726346346629</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1726346346630</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -435,7 +453,8 @@
     <MESSAGE value="update Dockerfile" />
     <MESSAGE value="update he logic with authorization and completed step 5" />
     <MESSAGE value="completed step 6))) (with model TaskStatus.java)" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed step 6))) (with model TaskStatus.java)" />
+    <MESSAGE value="almost done step 7))) (with model TaskS.java)&#10;resolve the communication issue OneToMany" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done step 7))) (with model TaskS.java)&#10;resolve the communication issue OneToMany" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$UsersControllerTests.ic" NAME="UsersControllerTests Coverage Results" MODIFIED="1725569565074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

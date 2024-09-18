@@ -1,7 +1,11 @@
 package hexlet.code.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -19,7 +23,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -59,11 +62,6 @@ public class User implements BaseEntity, UserDetails {
     @LastModifiedDate
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate updatedAt;
-
-//    @OneToMany(mappedBy = "assignee", fetch = FetchType.LAZY)
-//    @JsonIgnore
-//    private List<Task> taskListAssignee = new ArrayList<>();
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

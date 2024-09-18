@@ -7,11 +7,15 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "tasks")
@@ -53,4 +57,8 @@ public class Task implements BaseEntity {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @ToString.Include
     private LocalDate createdAt;
+
+    @ManyToMany
+    @Fetch(FetchMode.JOIN)
+    private Set<Label> labels = new HashSet<>();
 }

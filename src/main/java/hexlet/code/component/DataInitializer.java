@@ -1,7 +1,9 @@
 package hexlet.code.component;
 
+import hexlet.code.model.Label;
 import hexlet.code.model.TaskStatus;
 import hexlet.code.model.User;
+import hexlet.code.repository.LabelsRepository;
 import hexlet.code.repository.TaskStatusRepository;
 import hexlet.code.service.UserService.CustomUserDetailsService;
 import lombok.AllArgsConstructor;
@@ -14,6 +16,7 @@ import org.springframework.stereotype.Component;
 public class DataInitializer implements ApplicationRunner {
     private final CustomUserDetailsService usersService;
     private final TaskStatusRepository taskStatusRepository;
+    private final LabelsRepository labelsRepository;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
@@ -51,5 +54,13 @@ public class DataInitializer implements ApplicationRunner {
         statusPublished.setName("Published");
         statusPublished.setSlug("published");
         taskStatusRepository.save(statusPublished);
+
+        var labelFeature = new Label();
+        labelFeature.setName("feature");
+        labelsRepository.save(labelFeature);
+
+        var labelBug = new Label();
+        labelBug.setName("bug");
+        labelsRepository.save(labelBug);
     }
 }

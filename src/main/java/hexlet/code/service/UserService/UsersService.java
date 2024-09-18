@@ -5,7 +5,6 @@ import hexlet.code.dto.users.UserDTO;
 import hexlet.code.dto.users.UserUpdateDTO;
 import hexlet.code.exception.ResourceNotFoundException;
 import hexlet.code.mapper.UsersMapper;
-import hexlet.code.repository.TaskRepository;
 import hexlet.code.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,9 +19,6 @@ public class UsersService {
     @Autowired
     private UsersMapper mapper;
 
-
-    @Autowired
-    private TaskRepository taskRepository;
 
     public List<UserDTO> getAll() {
         var list = usersRepository.findAll();
@@ -53,10 +49,6 @@ public class UsersService {
     }
 
     public void delete(Long id) {
-//        if (taskRepository.existsByIdAndTaskListIsNotEmpty(id)) {
-//            throw new IllegalArgumentException("Невозможно удалить пользователя, так как у него есть связанные задачи");
-//        }
-
         usersRepository.deleteById(id);
     }
 
