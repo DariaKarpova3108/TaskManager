@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.459s</div>
+<div class="counter">0.529s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">testCreate()</td>
-<td class="success">0.212s</td>
+<td class="success">0.351s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteUser()</td>
-<td class="success">0.034s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetList()</td>
-<td class="success">0.056s</td>
+<td class="success">0.042s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetUser()</td>
-<td class="success">0.090s</td>
+<td class="success">0.070s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdate()</td>
-<td class="success">0.067s</td>
+<td class="success">0.038s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,30 +107,30 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>?[2m2024-09-19T00:06:45.417+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.users.UsersControllerTests]: UsersControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-?[2m2024-09-19T00:06:45.424+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.users.UsersControllerTests
-?[2m2024-09-19T00:06:45.439+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-19T00:06:45.440+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-19T00:06:45.442+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+<pre>?[2m2024-09-19T00:23:56.822+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.users.UsersControllerTests]: UsersControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+?[2m2024-09-19T00:23:56.829+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.users.UsersControllerTests
+?[2m2024-09-19T00:23:56.843+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-19T00:23:56.844+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-19T00:23:56.846+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0
 Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0
-?[2m2024-09-19T00:06:45.499+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-19T00:06:45.499+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-19T00:06:45.502+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-19T00:23:56.888+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-19T00:23:56.888+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-19T00:23:56.891+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-19T00:06:45.590+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-19T00:06:45.591+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-19T00:06:45.594+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-19T00:23:56.959+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-19T00:23:56.960+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-19T00:23:56.963+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-19T00:06:45.628+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-19T00:06:45.628+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-19T00:06:45.633+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 5 ms
+?[2m2024-09-19T00:23:56.991+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-19T00:23:56.991+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-19T00:23:56.999+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 8 ms
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-19T00:06:45.840+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-19T00:06:45.840+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-19T00:06:45.844+03:00?[0;39m ?[32m INFO?[0;39m ?[35m54710?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 4 ms
+?[2m2024-09-19T00:23:57.343+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-19T00:23:57.343+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-19T00:23:57.345+03:00?[0;39m ?[32m INFO?[0;39m ?[35m55302?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 </pre>
 </span>
@@ -143,7 +143,7 @@ Hibernate: insert into users (created_at,email,first_name,last_name,password_dig
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 19 сент. 2024 г., 00:06:46</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 19 сент. 2024 г., 00:23:58</p>
 </div>
 </div>
 </body>
