@@ -6,9 +6,11 @@ RUN apt-get update && apt-get install -yq make unzip
 
 WORKDIR /backend
 
+RUN ./gradlew --no-daemon dependencies
+
 COPY ./ .
 
-RUN ./gradlew build
+RUN ./gradlew --no-daemon build
 
 EXPOSE 8080
 
