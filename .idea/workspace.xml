@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update Dockerfile test6">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update Dockerfile test6+">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -499,7 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1726863541802</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="update Dockerfile test6">
+      <created>1726863831918</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1726863831918</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update Dockerfile test6+">
+      <created>1726864076112</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1726864076112</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -514,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update step 1 completely" />
     <MESSAGE value="done step 1!!!" />
     <MESSAGE value="step 2 (added Makefile, model - User.class, and  3 files - application.properties)" />
     <MESSAGE value="step 2 (testa for class UsersController and full CRUD operations for model User, and  3 files - application.yml)!!!!" />
@@ -539,7 +552,8 @@
     <MESSAGE value="update Dockerfile test4 added docker-compose.yaml" />
     <MESSAGE value="update Dockerfile test5" />
     <MESSAGE value="update Dockerfile test6" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Dockerfile test6" />
+    <MESSAGE value="update Dockerfile test6+" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Dockerfile test6+" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$TaskControllerTests.ic" NAME="TaskControllerTests Coverage Results" MODIFIED="1726687967291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
