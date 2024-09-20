@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/util/ConfigGenerateBeanFaker.java">
+</file>
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/util/ModelGenerator.java">
+</file>
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java">
+</file>
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/controller/api/users/LabelControllerTests.java">
+</file>
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java">
+</file>
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java">
+</file>
+<file name="/Users/dariakarpova/Desktop/java/java-project-99/src/test/java/hexlet/code/AppApplicationTests.java">
+</file>
+</checkstyle>

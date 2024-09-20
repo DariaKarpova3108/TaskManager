@@ -4,7 +4,76 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="added fronted!" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="completed step number 10!&#10;added sentry in project">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/label/LabelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/label/LabelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/task/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/task/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/users/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/users/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/model/Label.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/model/Label.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/repository/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/service/TaskService/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/service/TaskService/TaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/LabelControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/LabelControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/TaskControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/TaskControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/TaskStatusControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/TaskStatusControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/UsersControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/controller/api/users/UsersControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/util/ModelGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/util/ModelGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sentry/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sentry/sentry-debug-meta.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/JsonNullableMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/JsonNullableMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/LabelMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/LabelMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/ReferenceMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/ReferenceMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskStatusMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskStatusMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/UsersMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/UsersMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.LabelControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.LabelControllerTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskControllerTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskStatusControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskStatusControllerTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.UsersControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.UsersControllerTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.controller.api.users.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.controller.api.users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/app" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/app.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/app.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.LabelControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.LabelControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskStatusControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskStatusControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.UsersControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.UsersControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/label/LabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/label/LabelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/users/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/users/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Label.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/specification/TaskSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/specification/TaskSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,79 +178,7 @@
       <recent name="$PROJECT_DIR$/../" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.java-project-99 [test]">
-    <configuration name="TaskControllerTests.getListTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTask&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="TaskControllerTests.getListTaskWithStatus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTaskWithStatus&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="TaskControllerTests.getListTasksWithLabelId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTasksWithLabelId&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.java-project-99 [build]">
     <configuration name="TaskControllerTests.getListTasksWithParams" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,12 +203,93 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="java-project-99 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="java-project-99 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="java-project-99 [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="java-project-99 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="java-project-99 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -229,19 +307,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.TaskControllerTests.getListTask" />
-      <item itemvalue="Gradle.TaskControllerTests.getListTaskWithStatus" />
-      <item itemvalue="Gradle.TaskControllerTests.getListTasksWithLabelId" />
+      <item itemvalue="Gradle.java-project-99 [clean]" />
+      <item itemvalue="Gradle.java-project-99 [build]" />
+      <item itemvalue="Gradle.java-project-99 [check]" />
       <item itemvalue="Gradle.TaskControllerTests.getListTasksWithParams" />
       <item itemvalue="Gradle.java-project-99 [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.java-project-99 [build]" />
+        <item itemvalue="Gradle.java-project-99 [clean]" />
         <item itemvalue="Gradle.java-project-99 [test]" />
+        <item itemvalue="Gradle.java-project-99 [check]" />
         <item itemvalue="Gradle.TaskControllerTests.getListTasksWithParams" />
-        <item itemvalue="Gradle.TaskControllerTests.getListTask" />
-        <item itemvalue="Gradle.TaskControllerTests.getListTasksWithLabelId" />
-        <item itemvalue="Gradle.TaskControllerTests.getListTaskWithStatus" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726742582381</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="completed step number 10!&#10;added sentry in project">
+      <created>1726855927744</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1726855927744</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +548,8 @@
     <MESSAGE value="update Dockerfile2" />
     <MESSAGE value="added fronted" />
     <MESSAGE value="added fronted!" />
-    <option name="LAST_COMMIT_MESSAGE" value="added fronted!" />
+    <MESSAGE value="completed step number 10!&#10;added sentry in project" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed step number 10!&#10;added sentry in project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$TaskControllerTests.ic" NAME="TaskControllerTests Coverage Results" MODIFIED="1726687967291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
