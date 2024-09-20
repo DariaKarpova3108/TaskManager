@@ -1,15 +1,11 @@
-FROM eclipse-temurin:21-jdk
+FROM gradle:8.7.0-jdk21
 
-ARG GRADLE_VERSION=8.7
+WORKDIR /app
 
-WORKDIR /backend
+COPY / .
 
-COPY ./ .
+RUN gradle installDist
 
-RUN gradle build
-
-EXPOSE 8080
-
-CMD java -jar build/libs/app-0.0.1-SNAPSHOT.jar
+CMD ./build/libs/app-0.0.1-SNAPSHOT.jar
 
 
