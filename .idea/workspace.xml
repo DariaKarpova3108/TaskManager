@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/index-00eabb12.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="added fronted!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskParamDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/specification/TaskSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskService/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskService/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/LabelControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/LabelControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,93 +122,101 @@
       <recent name="$PROJECT_DIR$/../" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.java-project-99 [bootRun]">
-    <configuration name="java-project-99 [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.java-project-99 [test]">
+    <configuration name="TaskControllerTests.getListTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="bootRun" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTask&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="java-project-99 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TaskControllerTests.getListTaskWithStatus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTaskWithStatus&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="java-project-99 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TaskControllerTests.getListTasksWithLabelId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTasksWithLabelId&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="java-project-99 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TaskControllerTests.getListTasksWithParams" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="run" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hexlet.code.controller.api.users.TaskControllerTests.getListTasksWithParams&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="java-project-99 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -225,19 +242,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.java-project-99 [run]" />
-      <item itemvalue="Gradle.java-project-99 [build]" />
-      <item itemvalue="Gradle.java-project-99 [bootRun]" />
-      <item itemvalue="Gradle.java-project-99 [clean]" />
+      <item itemvalue="Gradle.TaskControllerTests.getListTask" />
+      <item itemvalue="Gradle.TaskControllerTests.getListTaskWithStatus" />
+      <item itemvalue="Gradle.TaskControllerTests.getListTasksWithLabelId" />
+      <item itemvalue="Gradle.TaskControllerTests.getListTasksWithParams" />
       <item itemvalue="Gradle.java-project-99 [test]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.java-project-99 [test]" />
-        <item itemvalue="Gradle.java-project-99 [clean]" />
-        <item itemvalue="Gradle.java-project-99 [bootRun]" />
-        <item itemvalue="Gradle.java-project-99 [build]" />
-        <item itemvalue="Gradle.java-project-99 [run]" />
+        <item itemvalue="Gradle.TaskControllerTests.getListTasksWithParams" />
+        <item itemvalue="Gradle.TaskControllerTests.getListTask" />
+        <item itemvalue="Gradle.TaskControllerTests.getListTasksWithLabelId" />
+        <item itemvalue="Gradle.TaskControllerTests.getListTaskWithStatus" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726738687033</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added fronted!">
+      <created>1726742582381</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1726742582381</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,7 +475,8 @@
     <MESSAGE value="update Dockerfile" />
     <MESSAGE value="update Dockerfile2" />
     <MESSAGE value="added fronted" />
-    <option name="LAST_COMMIT_MESSAGE" value="added fronted" />
+    <MESSAGE value="added fronted!" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fronted!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$TaskControllerTests.ic" NAME="TaskControllerTests Coverage Results" MODIFIED="1726687967291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

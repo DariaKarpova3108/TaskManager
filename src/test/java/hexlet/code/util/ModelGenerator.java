@@ -25,10 +25,8 @@ public class ModelGenerator {
 
     @Autowired
     private Faker faker;
-
     @Autowired
     private TaskStatusRepository taskStatusRepository;
-
     @Autowired
     private LabelsRepository labelsRepository;
 

@@ -30,10 +30,7 @@ import java.nio.charset.StandardCharsets;
 import static net.javacrumbs.jsonunit.assertj.JsonAssertions.assertThatJson;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -42,24 +39,18 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class TaskControllerTests {
     @Autowired
     private WebApplicationContext webApplicationContext;
-
     @Autowired
     private ObjectMapper objectMapper;
-
     @Autowired
     private MockMvc mockMvc;
-
     @Autowired
     private ModelGenerator modelGenerator;
-
     @Autowired
     private TaskRepository taskRepository;
     @Autowired
     private TaskStatusRepository statusRepository;
-
     @Autowired
     private UsersRepository usersRepository;
-
     private Task task;
     private TaskStatus taskStatus;
     private User user;
@@ -88,12 +79,90 @@ public class TaskControllerTests {
 
     @Test
     public void getListTask() throws Exception {
+        var task2 = Instancio.of(modelGenerator.getTaskModel()).create();
+        task2.setAssignee(user);
+        task2.setTaskStatus(taskStatus);
+        taskRepository.save(task2);
+
         var request = get("/api/tasks").with(token);
         var result = mockMvc.perform(request)
                 .andExpect(status().isOk())
                 .andReturn();
+
         var body = result.getResponse().getContentAsString();
-        assertThatJson(body).isArray();
+        assertThatJson(body).isArray().hasSize(2);
+    }
+
+    @Test
+    public void getListTasksWithTitleCont() throws Exception {
+        var request = get("/api/tasks?titleCont=create").with(token);
+        var result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn();
+
+        var body = result.getResponse().getContentAsString();
+        assertThat(body).isNotNull();
+        assertThatJson(body).isArray()
+                .allSatisfy(element -> assertThatJson(element)
+                        .and(v -> v.node("name").asString().containsIgnoringCase("create"))
+                );
+    }
+
+
+    @Test
+    public void getListTasksWithAssigneeId() throws Exception {
+        var request = get("/api/tasks?assigneeId=1").with(token);
+        var result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn();
+        var body = result.getResponse().getContentAsString();
+        assertThat(body).isNotNull();
+        assertThatJson(body).isArray().allSatisfy(element -> assertThatJson(element)
+                .and(v -> v.node("assignee").node("id").isEqualTo(1)));
+    }
+
+    @Test
+    public void getListTaskWithStatus() throws Exception {
+        var request = get("/api/tasks?status=to_be_fixed").with(token);
+        var result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn();
+
+        var body = result.getResponse().getContentAsString();
+        assertThat(body).isNotNull();
+        assertThatJson(body).isArray().allSatisfy(element -> assertThatJson(element)
+                .and(v -> v.node("taskStatus").node("slug").isEqualTo("to_be_fixed")));
+    }
+
+    @Test
+    public void getListTasksWithLabelId() throws Exception {
+        var request = get("/api/tasks?labelId=1").with(token);
+        var result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn();
+
+        var body = result.getResponse().getContentAsString();
+        assertThat(result).isNotNull();
+        assertThatJson(body).isArray().allSatisfy(element -> assertThatJson(element)
+                .and(v -> v.node("labels").node("id").isEqualTo(1)));
+    }
+
+    @Test
+    public void getListTasksWithParams() throws Exception {
+        var request = get("/api/tasks?titleCont=create&assigneeId=1&status=to_be_fixed&labelId=1")
+                .with(token);
+        var result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andReturn();
+
+        var body = result.getResponse().getContentAsString();
+        assertThat(body).isNotNull();
+        assertThatJson(body).isArray().allSatisfy(element -> assertThatJson(element)
+                .and(v -> v.node("name").asString().containsIgnoringCase("create"))
+                .and(v -> v.node("assignee").node("id").isEqualTo(1))
+                .and(v -> v.node("taskStatus").node("slug").isEqualTo("to_be_fixed"))
+                .and(v -> v.node("labels").node("id").isEqualTo(1))
+        );
     }
 
     @Test

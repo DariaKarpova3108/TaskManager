@@ -44,7 +44,6 @@ public class TaskStatusControllerTests {
     private TaskStatusRepository taskStatusRepository;
     @Autowired
     private ModelGenerator modelGenerator;
-
     private TaskStatus taskStatusModel;
     private SecurityMockMvcRequestPostProcessors.JwtRequestPostProcessor token;
 

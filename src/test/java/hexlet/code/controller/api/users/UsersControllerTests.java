@@ -37,19 +37,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class UsersControllerTests {
     @Autowired
     private WebApplicationContext webApplicationContext;
-
     @Autowired
     private MockMvc mockMvc;
-
     @Autowired
     private UsersRepository usersRepository;
-
     @Autowired
     private ObjectMapper objectMapper;
-
     @Autowired
     private ModelGenerator modelGenerator;
-
     private User user;
     private SecurityMockMvcRequestPostProcessors.JwtRequestPostProcessor token;
 

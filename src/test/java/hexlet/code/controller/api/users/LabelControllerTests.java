@@ -32,7 +32,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
@@ -47,7 +46,6 @@ public class LabelControllerTests {
     private ModelGenerator modelGenerator;
     @Autowired
     private LabelsRepository labelsRepository;
-
     private Label label;
     private SecurityMockMvcRequestPostProcessors.JwtRequestPostProcessor token;
 
@@ -60,7 +58,6 @@ public class LabelControllerTests {
         token = jwt().jwt(builder -> builder.subject("hexlet@example.com"));
         label = Instancio.of(modelGenerator.getLabelModel()).create();
         labelsRepository.save(label);
-
     }
 
     @Test
