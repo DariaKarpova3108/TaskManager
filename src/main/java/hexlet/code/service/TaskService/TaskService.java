@@ -26,13 +26,7 @@ public class TaskService {
     @Autowired
     private TaskSpecification specification;
 
-    /*        public List<TaskDTO> getListTasks() {
-            var listModel = repository.findAll();
-            return listModel.stream()
-                    .map(mapper::map)
-                    .toList();
-        }*/
-    public List<TaskDTO> getListTasks(TaskParamDTO paramDTO, @RequestParam(defaultValue = "1") int page) {
+    public List<TaskDTO> getListTasksWithParams(TaskParamDTO paramDTO, @RequestParam(defaultValue = "1") int page) {
         var spec = specification.build(paramDTO);
         var listModel = repository.findAll(spec, PageRequest.of(page - 1, 10));
         return listModel.stream()

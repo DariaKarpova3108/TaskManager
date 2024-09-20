@@ -9,6 +9,7 @@ import hexlet.code.specification.TaskSpecification;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,16 +32,12 @@ public class TaskController {
     @Autowired
     private TaskSpecification specification;
 
-    /*    @GetMapping
-        public ResponseEntity<List<TaskDTO>> getListTasks() {
-            return ResponseEntity.ok()
-                    .header("X-Total-Count", String.valueOf(taskService.getListTasks().size()))
-                    .body(taskService.getListTasks());
-        }*/
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public List<TaskDTO> getList(TaskParamDTO paramDTO, @RequestParam(defaultValue = "1") int page) {
-        return taskService.getListTasks(paramDTO, page);
+    public ResponseEntity<List<TaskDTO>> getList(TaskParamDTO paramDTO, @RequestParam(defaultValue = "1") int page) {
+        var result =  taskService.getListTasksWithParams(paramDTO, page);
+        return ResponseEntity.ok()
+                .header("X-Total-Count", String.valueOf(result.size()))
+                .body(result);
     }
 
     @GetMapping("/{id}")
