@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="added fronted!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/dto/task/TaskParamDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/specification/TaskSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/task/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/repository/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskService/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/service/TaskService/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/LabelControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/LabelControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/TaskStatusControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/UsersControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/util/ModelGenerator.java" afterDir="false" />
-    </list>
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="added fronted!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
