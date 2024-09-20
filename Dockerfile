@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -yq make unzip
 
 WORKDIR /backend
 
-COPY ./ .
+COPY ./ /backend
 
 RUN ./gradlew --no-daemon build
 
