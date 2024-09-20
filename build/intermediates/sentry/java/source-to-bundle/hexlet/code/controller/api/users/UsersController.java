@@ -3,7 +3,7 @@ package hexlet.code.controller.api.users;
 import hexlet.code.dto.users.UserCreateDTO;
 import hexlet.code.dto.users.UserDTO;
 import hexlet.code.dto.users.UserUpdateDTO;
-import hexlet.code.service.UserService.UsersService;
+import hexlet.code.service.UserService.CustomUserDetailsService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,7 +26,7 @@ import java.util.List;
 public class UsersController {
 
     @Autowired
-    private UsersService usersService;
+    private CustomUserDetailsService usersService;
 
     @GetMapping
     public ResponseEntity<List<UserDTO>> getList() {

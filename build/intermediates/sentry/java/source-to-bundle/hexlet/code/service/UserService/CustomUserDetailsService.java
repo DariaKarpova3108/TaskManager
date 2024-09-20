@@ -1,6 +1,10 @@
 package hexlet.code.service.UserService;
 
+import hexlet.code.dto.users.UserCreateDTO;
+import hexlet.code.dto.users.UserDTO;
+import hexlet.code.dto.users.UserUpdateDTO;
 import hexlet.code.exception.ResourceNotFoundException;
+import hexlet.code.mapper.UsersMapper;
 import hexlet.code.model.User;
 import hexlet.code.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +14,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CustomUserDetailsService implements UserDetailsManager {
+    @Autowired
+    private UsersMapper mapper;
 
     //совместить два сервиса для юзеров в один сюда
-
     @Autowired
     private UsersRepository usersRepository;
 
@@ -37,24 +44,48 @@ public class CustomUserDetailsService implements UserDetailsManager {
         usersRepository.save(user);
     }
 
-    //пока есть вопрос нужно ли и если да то верно ли реализована логика переопределения методов ниже
+
+    public List<UserDTO> getAll() {
+        var list = usersRepository.findAll();
+        var mapList = list.stream()
+                .map(mapper::map)
+                .toList();
+        return mapList;
+    }
+
+    public UserDTO getUser(Long id) {
+        var user = usersRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Not Found user with id: " + id));
+        return mapper.map(user);
+    }
+
+    public UserDTO create(UserCreateDTO createDTO) {
+        var user = mapper.map(createDTO);
+        usersRepository.save(user);
+        return mapper.map(user);
+    }
+
+    public UserDTO update(UserUpdateDTO updateDTO, Long id) {
+        var user = usersRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Not Found user with id: " + id));
+        mapper.update(updateDTO, user);
+        usersRepository.save(user);
+        return mapper.map(user);
+    }
+
+    public void delete(Long id) {
+        usersRepository.deleteById(id);
+    }
+
+
     @Override
     public void updateUser(UserDetails userdata) {
-        var user = usersRepository.findByEmail(userdata.getUsername())
-                .orElseThrow(() -> new ResourceNotFoundException("User: " + userdata + " NOT FOUND"));
-        user.setEmail(userdata.getUsername());
-        var newHashPassword = userdata.getPassword();
-        user.setPasswordDigest(passwordEncoder.encode(newHashPassword));
-        usersRepository.save(user);
-        // throw new UnsupportedOperationException("Unimplemented method 'userExists'");
+        throw new UnsupportedOperationException("Unimplemented method 'userExists'");
     }
 
     @Override
     public void deleteUser(String username) {
-        var user = usersRepository.findByEmail(username)
-                .orElseThrow(() -> new ResourceNotFoundException("User: " + username + " NOT FOUND"));
-        usersRepository.delete(user);
-        //throw new UnsupportedOperationException("Unimplemented method 'userExists'");
+        throw new UnsupportedOperationException("Unimplemented method 'userExists'");
     }
 
     @Override
