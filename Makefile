@@ -22,6 +22,9 @@ install:
 test:
 	./gradlew test
 
+report:
+	./gradlew jacocoTestReport
+
 check-java-deps:
 	./gradlew dependencyUpdates -Drevision=release
 
