@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="added main-check.yml">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/check.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +110,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/../" />
     </key>
@@ -575,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727017597734</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update">
+      <created>1727017637533</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1727017637533</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="it's check conected 2" />
     <MESSAGE value="step 4 done!!!" />
     <MESSAGE value="step 4 done!!" />
     <MESSAGE value="update application.yml" />
@@ -615,7 +623,8 @@
     <MESSAGE value="update project" />
     <MESSAGE value="added main.yml" />
     <MESSAGE value="added main-check.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added main-check.yml" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$TaskControllerTests.ic" NAME="TaskControllerTests Coverage Results" MODIFIED="1726687967291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
