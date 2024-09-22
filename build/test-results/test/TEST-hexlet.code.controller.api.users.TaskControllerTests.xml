@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hexlet.code.controller.api.users.TaskControllerTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-09-22T13:51:41" hostname="MacBook-Air-Dara.local" time="0.961">
+<testsuite name="hexlet.code.controller.api.users.TaskControllerTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-09-22T15:57:07" hostname="MacBook-Air-Dara.local" time="0.892">
   <properties/>
-  <testcase name="getListTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.189"/>
-  <testcase name="getListTasksWithLabelId()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.133"/>
-  <testcase name="getListTasksWithTitleCont()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.12"/>
-  <testcase name="updateTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.074"/>
-  <testcase name="getTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.042"/>
-  <testcase name="getListTasksWithAssigneeId()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.054"/>
-  <testcase name="getListTaskWithStatus()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.071"/>
-  <testcase name="createTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.105"/>
-  <testcase name="deleteTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.087"/>
-  <testcase name="getListTasksWithParams()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.05"/>
-  <system-out><![CDATA[?[2m2024-09-22T16:51:41.046+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.users.TaskControllerTests]: TaskControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-?[2m2024-09-22T16:51:41.052+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.users.TaskControllerTests
-?[2m2024-09-22T16:51:41.065+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.065+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.067+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+  <testcase name="getListTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.231"/>
+  <testcase name="getListTasksWithLabelId()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.076"/>
+  <testcase name="getListTasksWithTitleCont()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.112"/>
+  <testcase name="updateTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.093"/>
+  <testcase name="getTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.055"/>
+  <testcase name="getListTasksWithAssigneeId()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.047"/>
+  <testcase name="getListTaskWithStatus()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.067"/>
+  <testcase name="createTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.068"/>
+  <testcase name="deleteTask()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.045"/>
+  <testcase name="getListTasksWithParams()" classname="hexlet.code.controller.api.users.TaskControllerTests" time="0.067"/>
+  <system-out><![CDATA[?[2m2024-09-22T18:57:07.774+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.users.TaskControllerTests]: TaskControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+?[2m2024-09-22T18:57:07.782+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.users.TaskControllerTests
+?[2m2024-09-22T18:57:07.805+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:07.805+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:07.809+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status from tasks t1_0 where 1=1 and 1=1 and 1=1 and 1=1 offset ? rows fetch first ? rows only
-?[2m2024-09-22T16:51:41.268+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.270+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.281+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-22T18:57:08.036+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.036+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.039+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status from tasks t1_0 join tasks_labels l1_0 on t1_0.id=l1_0.tasks_id where 1=1 and 1=1 and 1=1 and l1_0.labels_id=? offset ? rows fetch first ? rows only
-?[2m2024-09-22T16:51:41.421+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.421+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.432+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 9 ms
+?[2m2024-09-22T18:57:08.117+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.118+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.121+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status from tasks t1_0 where lower(t1_0.name) like ? escape '' and 1=1 and 1=1 and 1=1 offset ? rows fetch first ? rows only
-?[2m2024-09-22T16:51:41.523+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.524+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.527+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+?[2m2024-09-22T18:57:08.231+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.232+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.234+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-22T16:51:41.599+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.600+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.603+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-22T18:57:08.330+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.331+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.335+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 4 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-22T16:51:41.643+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.643+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.645+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 1 ms
+?[2m2024-09-22T18:57:08.388+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.388+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.391+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status from tasks t1_0 where 1=1 and t1_0.assignee_id=? and 1=1 and 1=1 offset ? rows fetch first ? rows only
-?[2m2024-09-22T16:51:41.702+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.702+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.711+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 8 ms
+?[2m2024-09-22T18:57:08.440+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.440+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.444+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status from tasks t1_0 where 1=1 and 1=1 and lower(t1_0.task_status)=? and 1=1 offset ? rows fetch first ? rows only
-?[2m2024-09-22T16:51:41.781+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.782+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.790+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 5 ms
+?[2m2024-09-22T18:57:08.509+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.509+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.512+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
 Hibernate: select ts1_0.id,ts1_0.created_at,ts1_0.slug,ts1_0.name from task_statuses ts1_0 where ts1_0.slug=?
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-22T16:51:41.886+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.887+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.891+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-22T18:57:08.580+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.580+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.584+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
 Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status,id) values (?,?,?,?,?,?,default)
-?[2m2024-09-22T16:51:41.977+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-22T16:51:41.978+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-22T16:51:41.981+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-22T18:57:08.635+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T18:57:08.635+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T18:57:08.639+03:00?[0;39m ?[32m INFO?[0;39m ?[35m38480?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 4 ms
 Hibernate: select ts1_0.id from task_statuses ts1_0 where ts1_0.slug=? fetch first ? rows only
 Hibernate: insert into users (created_at,email,first_name,last_name,password_digest,updated_at,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into task_statuses (created_at,name,slug,id) values (?,?,?,default)
