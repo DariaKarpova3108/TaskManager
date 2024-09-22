@@ -5,51 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update project">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/sentry/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sentry/sentry-debug-meta.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/bundle-id/sentry-bundle-id.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/bundle-id/sentry-bundle-id.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CustomUserDetailsService.class.uniqueId26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DataInitializer.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/GlobalExceptionHandler.class.uniqueId29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Label.class.uniqueId17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LabelMapper.class.uniqueId18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LabelMapperImpl.class.uniqueId19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LabelMapperImpl.java.uniqueId22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LabelService.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LabelsRepository.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LinkingTasksToAnotherEntityException.class.uniqueId21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Task.class.uniqueId25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskMapper.class.uniqueId16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskMapperImpl.class.uniqueId8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskMapperImpl.java.uniqueId12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskRepository.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskService.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskSpecification.class.uniqueId20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskStatus.class.uniqueId10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskStatusMapper.class.uniqueId11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskStatusMapperImpl.class.uniqueId7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskStatusMapperImpl.java.uniqueId27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskStatusRepository.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TaskStatusService.class.uniqueId15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserUtils.class.uniqueId23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UsersMapper.class.uniqueId24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UsersMapperImpl.class.uniqueId28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UsersMapperImpl.java.uniqueId14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UsersRepository.class.uniqueId9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +121,7 @@
       <recent name="$PROJECT_DIR$/../" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.java-project-99 [bootRun]">
+  <component name="RunManager" selected="Gradle.java-project-99 [jacocoTestReport]">
     <configuration name="java-project-99 [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="env">
@@ -212,6 +176,60 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="java-project-99 [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestCoverageVerification" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="java-project-99 [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="java-project-99 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="env">
@@ -239,20 +257,6 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="" arguments="">
-        <envs>
-          <env name="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
-        </envs>
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="install" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="install" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
@@ -260,19 +264,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.java-project-99 [jacocoTestReport]" />
+      <item itemvalue="Gradle.java-project-99 [jacocoTestCoverageVerification]" />
       <item itemvalue="Gradle.java-project-99 [bootRun]" />
       <item itemvalue="Gradle.java-project-99 [build]" />
       <item itemvalue="Gradle.java-project-99 [test]" />
-      <item itemvalue="Makefile Target.build" />
-      <item itemvalue="Makefile Target.install" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.java-project-99 [jacocoTestReport]" />
+        <item itemvalue="Gradle.java-project-99 [jacocoTestCoverageVerification]" />
         <item itemvalue="Gradle.java-project-99 [bootRun]" />
         <item itemvalue="Gradle.java-project-99 [build]" />
         <item itemvalue="Gradle.java-project-99 [test]" />
-        <item itemvalue="Makefile Target.build" />
-        <item itemvalue="Makefile Target.install" />
       </list>
     </recent_temporary>
   </component>
@@ -558,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727013186838</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="update project">
+      <created>1727016721714</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1727016721714</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
