@@ -1,6 +1,6 @@
 package hexlet.code.config;
 
-import hexlet.code.service.UserService.CustomUserDetailsService;
+import hexlet.code.service.user_service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -40,7 +40,7 @@ public class SecurityConfig {
                                 .requestMatchers("/").permitAll()
                                 .requestMatchers("/api/login").permitAll()
                                 .requestMatchers("/welcome").permitAll()
-                                .requestMatchers("/index.html", "/index/****").permitAll()
+                                .requestMatchers("/index.html").permitAll()
                                 .requestMatchers("/assets/**").permitAll()
                                 .requestMatchers("/swagger-ui/**").permitAll()
                                 .requestMatchers("/swagger-ui.html").permitAll()

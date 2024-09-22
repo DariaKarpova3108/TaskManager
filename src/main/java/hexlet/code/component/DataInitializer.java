@@ -2,14 +2,13 @@ package hexlet.code.component;
 
 import hexlet.code.dto.label.LabelCreateDTO;
 import hexlet.code.dto.task_statuses.TaskStatusCreateDTO;
-import hexlet.code.model.TaskStatus;
 import hexlet.code.model.User;
 import hexlet.code.repository.LabelsRepository;
 import hexlet.code.repository.TaskStatusRepository;
 import hexlet.code.repository.UsersRepository;
-import hexlet.code.service.LabelService.LabelService;
-import hexlet.code.service.TaskStatusService.TaskStatusService;
-import hexlet.code.service.UserService.CustomUserDetailsService;
+import hexlet.code.service.label_service.LabelService;
+import hexlet.code.service.task_status_service.TaskStatusService;
+import hexlet.code.service.user_service.CustomUserDetailsService;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
