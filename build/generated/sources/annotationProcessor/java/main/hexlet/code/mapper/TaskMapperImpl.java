@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-09-20T23:49:59+0300",
+    date = "2024-09-22T16:50:57+0300",
     comments = "version: 1.5.5.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-8.7.jar, environment: Java 21.0.2 (Oracle Corporation)"
 )
 @Component
@@ -21,6 +21,8 @@ public class TaskMapperImpl extends TaskMapper {
 
     @Autowired
     private JsonNullableMapper jsonNullableMapper;
+    @Autowired
+    private ReferenceMapper referenceMapper;
 
     @Override
     public Task map(TaskCreateDTO createDTO) {
@@ -33,7 +35,7 @@ public class TaskMapperImpl extends TaskMapper {
         task.setName( createDTO.getTitle() );
         task.setDescription( createDTO.getContent() );
         task.setTaskStatus( statusSlugToTaskStatus( createDTO.getStatus() ) );
-        task.setAssignee( usersIdToAssignee( createDTO.getAssigneeId() ) );
+        task.setAssignee( referenceMapper.toEntity( createDTO.getAssigneeId(), User.class ) );
         task.setLabels( labelsIdToModel( createDTO.getLabelsId() ) );
         task.setIndex( createDTO.getIndex() );
 
@@ -84,7 +86,7 @@ public class TaskMapperImpl extends TaskMapper {
             }
         }
         if ( jsonNullableMapper.isPresent( updateDTO.getAssigneeId() ) ) {
-            task.setAssignee( usersIdToAssignee( jsonNullableMapper.unwrap( updateDTO.getAssigneeId() ) ) );
+            task.setAssignee( referenceMapper.toEntity( jsonNullableMapper.unwrap( updateDTO.getAssigneeId() ), User.class ) );
         }
         if ( jsonNullableMapper.isPresent( updateDTO.getStatus() ) ) {
             if ( task.getTaskStatus() == null ) {

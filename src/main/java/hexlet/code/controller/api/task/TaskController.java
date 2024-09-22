@@ -5,7 +5,6 @@ import hexlet.code.dto.task.TaskDTO;
 import hexlet.code.dto.task.TaskParamDTO;
 import hexlet.code.dto.task.TaskUpdateDTO;
 import hexlet.code.service.TaskService.TaskService;
-import hexlet.code.specification.TaskSpecification;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,9 +27,6 @@ import java.util.List;
 public class TaskController {
     @Autowired
     private TaskService taskService;
-
-    @Autowired
-    private TaskSpecification specification;
 
     @GetMapping
     public ResponseEntity<List<TaskDTO>> getList(TaskParamDTO paramDTO, @RequestParam(defaultValue = "1") int page) {

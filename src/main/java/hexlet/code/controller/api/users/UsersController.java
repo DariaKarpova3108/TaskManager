@@ -3,7 +3,7 @@ package hexlet.code.controller.api.users;
 import hexlet.code.dto.users.UserCreateDTO;
 import hexlet.code.dto.users.UserDTO;
 import hexlet.code.dto.users.UserUpdateDTO;
-import hexlet.code.service.UserService.CustomUserDetailsService;
+import hexlet.code.service.UserService.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,7 +26,7 @@ import java.util.List;
 public class UsersController {
 
     @Autowired
-    private CustomUserDetailsService usersService;
+    private UserService usersService;
 
     @GetMapping
     public ResponseEntity<List<UserDTO>> getList() {
@@ -36,7 +36,6 @@ public class UsersController {
     }
 
     @GetMapping("/{id}")
-    @PreAuthorize("@userUtils.isCurrentUser(#id)")
     @ResponseStatus(HttpStatus.OK)
     public UserDTO getUser(@PathVariable Long id) {
         return usersService.getUser(id);
@@ -49,14 +48,14 @@ public class UsersController {
     }
 
     @PutMapping("/{id}")
-    @PreAuthorize("@userUtils.isCurrentUser(#id)")
+    @PreAuthorize("@userUtils.getCurrentUser().getId() == #id")
     @ResponseStatus(HttpStatus.OK)
     public UserDTO update(@RequestBody @Valid UserUpdateDTO updateDTO, @PathVariable Long id) {
         return usersService.update(updateDTO, id);
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("@userUtils.isCurrentUser(#id)")
+    @PreAuthorize("@userUtils.getCurrentUser().getId() == #id")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteUser(@PathVariable Long id) {
         usersService.delete(id);

@@ -59,7 +59,7 @@ public class Task implements BaseEntity {
     private TaskStatus taskStatus;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "assignee_id", referencedColumnName = "id")
+    @JoinColumn(name = "assignee_id", referencedColumnName = "id", nullable = true)
     @ToString.Include
     private User assignee;
 
@@ -68,7 +68,7 @@ public class Task implements BaseEntity {
     @ToString.Include
     private LocalDate createdAt;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     private Set<Label> labels = new HashSet<>();
 }

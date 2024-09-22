@@ -38,12 +38,14 @@ public class ModelGenerator {
                 .supply(Select.field(User::getLastName), () -> faker.name().lastName())
                 .supply(Select.field(User::getEmail), () -> faker.internet().emailAddress())
                 .supply(Select.field(User::getPasswordDigest), () -> faker.internet().password(3, 10))
+                .ignore(Select.field(User::getLisTasks))
                 .toModel();
 
         taskStatusModel = Instancio.of(TaskStatus.class)
                 .ignore(Select.field(TaskStatus::getId))
                 .supply(Select.field(TaskStatus::getName), () -> faker.name().title())
                 .supply(Select.field(TaskStatus::getSlug), this::generateUniqueSlug)
+                .ignore(Select.field(TaskStatus::getListTasks))
                 .toModel();
 
         taskModel = Instancio.of(Task.class)

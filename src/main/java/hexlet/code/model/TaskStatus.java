@@ -6,6 +6,7 @@ import jakarta.persistence.EntityListeners;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -18,6 +19,8 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "task_statuses")
@@ -48,4 +51,7 @@ public class TaskStatus implements BaseEntity {
     @ToString.Include
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate createdAt;
+
+    @OneToMany(mappedBy = "taskStatus")
+    private List<Task> listTasks = new ArrayList<>();
 }

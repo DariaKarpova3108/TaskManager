@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.866s</div>
+<div class="counter">1.201s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">createLabel()</td>
-<td class="success">0.085s</td>
+<td class="success">0.056s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">deleteLabel()</td>
-<td class="success">1.267s</td>
+<td class="success">0.516s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getLabel()</td>
-<td class="success">0.077s</td>
+<td class="success">0.059s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getListLabels()</td>
-<td class="success">0.180s</td>
+<td class="success">0.156s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">updateLabel()</td>
-<td class="success">0.257s</td>
+<td class="success">0.414s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,35 +107,35 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>?[2m2024-09-20T23:52:31.256+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.users.LabelControllerTests]: LabelControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-?[2m2024-09-20T23:52:31.306+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.users.LabelControllerTests
-?[2m2024-09-20T23:52:31.388+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-20T23:52:31.388+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-20T23:52:31.391+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+<pre>?[2m2024-09-22T16:51:39.775+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [hexlet.code.controller.api.users.LabelControllerTests]: LabelControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+?[2m2024-09-22T16:51:39.809+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration hexlet.code.AppApplication for test class hexlet.code.controller.api.users.LabelControllerTests
+?[2m2024-09-22T16:51:39.837+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T16:51:39.837+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T16:51:39.839+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 1 ms
 Hibernate: select l1_0.id from labels l1_0 where l1_0.name=? fetch first ? rows only
 Hibernate: insert into labels (created_at,name,id) values (?,?,default)
-?[2m2024-09-20T23:52:32.607+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-20T23:52:32.607+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-20T23:52:32.609+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+?[2m2024-09-22T16:51:40.345+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T16:51:40.346+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T16:51:40.348+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
 Hibernate: select l1_0.id from labels l1_0 where l1_0.name=? fetch first ? rows only
 Hibernate: insert into labels (created_at,name,id) values (?,?,default)
-?[2m2024-09-20T23:52:32.866+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-20T23:52:32.867+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-20T23:52:32.870+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+?[2m2024-09-22T16:51:40.769+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T16:51:40.770+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T16:51:40.773+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: select l1_0.id from labels l1_0 where l1_0.name=? fetch first ? rows only
 Hibernate: insert into labels (created_at,name,id) values (?,?,default)
 Hibernate: insert into labels (created_at,name,id) values (?,?,default)
 Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
-?[2m2024-09-20T23:52:32.954+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-20T23:52:32.954+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-20T23:52:32.957+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 2 ms
+?[2m2024-09-22T16:51:40.826+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T16:51:40.827+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T16:51:40.830+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: select l1_0.id from labels l1_0 where l1_0.name=? fetch first ? rows only
 Hibernate: insert into labels (created_at,name,id) values (?,?,default)
 Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0
 Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0
-?[2m2024-09-20T23:52:33.138+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
-?[2m2024-09-20T23:52:33.139+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
-?[2m2024-09-20T23:52:33.142+03:00?[0;39m ?[32m INFO?[0;39m ?[35m17700?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
+?[2m2024-09-22T16:51:40.984+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.b.t.m.w.SpringBootMockServletContext?[0;39m ?[2m:?[0;39m Initializing Spring TestDispatcherServlet ''
+?[2m2024-09-22T16:51:40.984+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Initializing Servlet ''
+?[2m2024-09-22T16:51:40.988+03:00?[0;39m ?[32m INFO?[0;39m ?[35m35172?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.t.web.servlet.TestDispatcherServlet ?[0;39m ?[2m:?[0;39m Completed initialization in 3 ms
 Hibernate: select l1_0.id from labels l1_0 where l1_0.name=? fetch first ? rows only
 Hibernate: insert into labels (created_at,name,id) values (?,?,default)
 </pre>
@@ -149,7 +149,7 @@ Hibernate: insert into labels (created_at,name,id) values (?,?,default)
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 20 сент. 2024 г., 23:52:36</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 22 сент. 2024 г., 16:51:44</p>
 </div>
 </div>
 </body>

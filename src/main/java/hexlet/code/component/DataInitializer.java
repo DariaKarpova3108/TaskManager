@@ -1,10 +1,13 @@
 package hexlet.code.component;
 
-import hexlet.code.model.Label;
-import hexlet.code.model.TaskStatus;
+import hexlet.code.dto.label.LabelCreateDTO;
+import hexlet.code.dto.task_statuses.TaskStatusCreateDTO;
 import hexlet.code.model.User;
 import hexlet.code.repository.LabelsRepository;
 import hexlet.code.repository.TaskStatusRepository;
+import hexlet.code.repository.UsersRepository;
+import hexlet.code.service.LabelService.LabelService;
+import hexlet.code.service.TaskStatusService.TaskStatusService;
 import hexlet.code.service.UserService.CustomUserDetailsService;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
@@ -15,7 +18,10 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class DataInitializer implements ApplicationRunner {
     private final CustomUserDetailsService usersService;
+    private final UsersRepository usersRepository;
+    private final TaskStatusService taskStatusService;
     private final TaskStatusRepository taskStatusRepository;
+    private final LabelService labelService;
     private final LabelsRepository labelsRepository;
 
     @Override
@@ -29,38 +35,46 @@ public class DataInitializer implements ApplicationRunner {
         admin.setPasswordDigest("qwerty");
         admin.setFirstName("admin");
         usersService.createUser(admin);
+        var savedUser = usersRepository.findByEmail("hexlet@example.com").get();
 
-        var statusDraft = new TaskStatus();
+        var statusDraft = new TaskStatusCreateDTO();
         statusDraft.setName("Draft");
         statusDraft.setSlug("draft");
-        taskStatusRepository.save(statusDraft);
+        taskStatusService.create(statusDraft);
+        var draft = taskStatusRepository.findBySlug("draft");
 
-        var statusToReview = new TaskStatus();
+        var statusToReview = new TaskStatusCreateDTO();
         statusToReview.setName("To_review");
         statusToReview.setSlug("to_review");
-        taskStatusRepository.save(statusToReview);
+        taskStatusService.create(statusToReview);
+        var toReview = taskStatusRepository.findBySlug("to_review");
 
-        var statusToBeFixed = new TaskStatus();
+        var statusToBeFixed = new TaskStatusCreateDTO();
         statusToBeFixed.setName("To_be_fixed");
         statusToBeFixed.setSlug("to_be_fixed");
-        taskStatusRepository.save(statusToBeFixed);
+        taskStatusService.create(statusToBeFixed);
+        var toBeFixed = taskStatusRepository.findBySlug("to_be_fixed");
 
-        var statusToPublish = new TaskStatus();
+        var statusToPublish = new TaskStatusCreateDTO();
         statusToPublish.setName("To_publish");
         statusToPublish.setSlug("to_publish");
-        taskStatusRepository.save(statusToPublish);
+        taskStatusService.create(statusToPublish);
+        var toPublish = taskStatusRepository.findBySlug("to_publish");
 
-        var statusPublished = new TaskStatus();
+        var statusPublished = new TaskStatusCreateDTO();
         statusPublished.setName("Published");
         statusPublished.setSlug("published");
-        taskStatusRepository.save(statusPublished);
+        taskStatusService.create(statusPublished);
+        var publish = taskStatusRepository.findBySlug("published");
 
-        var labelFeature = new Label();
+        var labelFeature = new LabelCreateDTO();
         labelFeature.setName("feature");
-        labelsRepository.save(labelFeature);
+        labelService.createLabel(labelFeature);
+        var feature = labelsRepository.findByName("feature");
 
-        var labelBug = new Label();
+        var labelBug = new LabelCreateDTO();
         labelBug.setName("bug");
-        labelsRepository.save(labelBug);
+        labelService.createLabel(labelBug);
+        var bug = labelsRepository.findByName("bug");
     }
 }
