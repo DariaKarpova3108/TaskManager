@@ -16,6 +16,10 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 
+logging:
+  level:
+    org.springframework.security: trace
+
 sentry:
   dsn: https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720˚
   environment: ${SPRING_PROFILES_ACTIVE}

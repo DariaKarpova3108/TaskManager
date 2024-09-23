@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update title od directories">
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update JwtEncoder">
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootScripts/app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootScripts/app.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/JWTUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/JWTUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/UserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/UserUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/AppApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/util/ConfigGenerateBeanFaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hexlet/code/util/ModelGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/sentry/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sentry/sentry-debug-meta.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/JsonNullableMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/JsonNullableMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/LabelMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/LabelMapperImpl.java" afterDir="false" />
@@ -26,23 +32,90 @@
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskStatusMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskStatusMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/UsersMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/UsersMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/bundle-id/sentry-bundle-id.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/bundle-id/sentry-bundle-id.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/utils/UserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/utils/UserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/AppApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/AppApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/component/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/component/RsaKeyProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/EncodersConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/JacksonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/controller/WelcomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/controller/api/AuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/controller/api/label/LabelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/controller/api/task/TaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/AuthRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/label/LabelCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/label/LabelDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/label/LabelUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task/TaskCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task/TaskDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task/TaskParamDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task/TaskUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task_statuses/TaskStatusCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task_statuses/TaskStatusDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/task_statuses/TaskStatusUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/users/UserCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/users/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/dto/users/UserUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/exception/LinkingTasksToAnotherEntityException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/handler/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/mapper/JsonNullableMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/mapper/LabelMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/mapper/ReferenceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/mapper/TaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/mapper/TaskStatusMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/mapper/UsersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/model/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/model/Label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/model/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/model/TaskStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/repository/LabelsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/repository/TaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/repository/TaskStatusRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/repository/UsersRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/specification/TaskSpecification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/util/ConfigGenerateBeanFaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/util/ModelGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/utils/JWTUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/utils/UserUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lombok/effective-config/lombok-test.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/app.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/jacocoagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/org/jacoco/agent/AgentJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/org/jacoco/agent/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/users/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/JWTUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/UserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/UserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,10 +221,16 @@
   <component name="RunManager" selected="Gradle.java-project-99 [bootRun]">
     <configuration name="java-project-99 [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="SENTRY_AUTH_TOKEN" value="sntrys_eyJpYXQiOjE3MjY4NDY5NzQuMzczMTgxLCJ1cmwiOiJodHRwczovL3NlbnRyeS5pbyIsInJlZ2lvbl91cmwiOiJodHRwczovL3VzLnNlbnRyeS5pbyIsIm9yZyI6ImRhcmlhLTJxIn0=_pW5TOJGFKs3NiOrnegk4vDm5Dy1BhJ+R5k9Xh3YI8H" />
+            <entry key="SENTRY_DSN" value="https://e06e3e1c8266b3c83528631027755f9d@o4507985953685504.ingest.us.sentry.io/4507985962270720" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -212,6 +291,28 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="java-project-99 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="java-project-99 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="env">
@@ -239,12 +340,6 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
@@ -252,19 +347,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.java-project-99 [jar]" />
       <item itemvalue="Gradle.java-project-99 [bootRun]" />
       <item itemvalue="Gradle.java-project-99 [clean]" />
       <item itemvalue="Gradle.java-project-99 [build]" />
       <item itemvalue="Gradle.java-project-99 [test]" />
-      <item itemvalue="Makefile Target.build" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.java-project-99 [bootRun]" />
-        <item itemvalue="Gradle.java-project-99 [build]" />
         <item itemvalue="Gradle.java-project-99 [clean]" />
+        <item itemvalue="Gradle.java-project-99 [build]" />
+        <item itemvalue="Gradle.java-project-99 [jar]" />
         <item itemvalue="Gradle.java-project-99 [test]" />
-        <item itemvalue="Makefile Target.build" />
       </list>
     </recent_temporary>
   </component>
@@ -276,20 +371,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725379681795</updated>
-    </task>
-    <task id="LOCAL-00001" summary="update step 1 completely">
-      <created>1725382614106</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1725382614106</updated>
-    </task>
-    <task id="LOCAL-00002" summary="done step 1!!!">
-      <created>1725383365451</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1725383365451</updated>
     </task>
     <task id="LOCAL-00003" summary="step 2 (added Makefile, model - User.class, and  3 files - application.properties)">
       <created>1725447589804</created>
@@ -620,7 +701,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727034539890</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update JwtEncoder">
+      <created>1727091013598</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1727091013601</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update JwtEncoder">
+      <created>1727092771591</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1727092771592</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -635,7 +730,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="almost done step 7))) (with model TaskS.java)&#10;resolve the communication issue OneToMany" />
     <MESSAGE value="almost done step 8))) (with model Label.java)&#10;and added M2M communication between models Task and Label" />
     <MESSAGE value="corrected step 8 (added Swagger)" />
     <MESSAGE value="update Dockerfile" />
@@ -660,7 +754,8 @@
     <MESSAGE value="test2 (update Makefile)" />
     <MESSAGE value="added test AuthenticationControllerTest.java" />
     <MESSAGE value="update title od directories" />
-    <option name="LAST_COMMIT_MESSAGE" value="update title od directories" />
+    <MESSAGE value="update JwtEncoder" />
+    <option name="LAST_COMMIT_MESSAGE" value="update JwtEncoder" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$TaskControllerTests.ic" NAME="TaskControllerTests Coverage Results" MODIFIED="1726687967291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
