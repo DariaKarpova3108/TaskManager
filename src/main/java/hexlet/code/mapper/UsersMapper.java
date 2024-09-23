@@ -13,7 +13,7 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 import org.mapstruct.ReportingPolicy;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Mapper(
@@ -23,7 +23,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
         nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE
 )
 public abstract class UsersMapper {
-    //import org.springframework.security.crypto.password.PasswordEncoder;
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
