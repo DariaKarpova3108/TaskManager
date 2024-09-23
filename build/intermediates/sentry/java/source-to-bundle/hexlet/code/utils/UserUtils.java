@@ -21,4 +21,9 @@ public class UserUtils {
         var email = authentication.getName();
         return repository.findByEmail(email).get();
     }
+
+    public User getTestUser() {
+        return  repository.findByEmail("hexlet@example.com")
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
 }

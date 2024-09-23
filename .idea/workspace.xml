@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="test2 (update Makefile)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/controller/api/users/AuthenticationControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/check.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/check.yml" afterDir="false" />
+    <list default="true" id="bc2b1958-94aa-4b4f-bf32-2174e430bab5" name="Changes" comment="update title od directories">
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/component/DataInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/component/DataInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/controller/api/AuthenticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/handler/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/handler/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/JWTUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/JWTUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/UserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hexlet/code/utils/UserUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.tar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-0.0.1-SNAPSHOT.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/app-boot-0.0.1-SNAPSHOT.tar" afterDir="false" />
@@ -33,40 +26,23 @@
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskStatusMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/TaskStatusMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/UsersMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/hexlet/code/mapper/UsersMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/bundle-id/sentry-bundle-id.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/bundle-id/sentry-bundle-id.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-bundle/14709352-be79-4e2e-a6dd-12b2710056e1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-bundle/9be1edd0-90c3-42ad-b438-c38a8304f22d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-bundle/b201830f-f61c-4e8b-8d31-21056ade13b9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/component/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/component/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/controller/api/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/controller/api/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/utils/UserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/sentry/java/source-to-bundle/hexlet/code/utils/UserUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/checkstyle/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/checkstyle/test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.AppApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.LabelControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.LabelControllerTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskControllerTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskStatusControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.TaskStatusControllerTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.UsersControllerTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hexlet.code.controller.api.users.UsersControllerTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.controller.api.users.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.controller.api.users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/hexlet.code.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sentry-debug-meta.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.AppApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.LabelControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.LabelControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskStatusControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.TaskStatusControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.UsersControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-hexlet.code.controller.api.users.UsersControllerTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/component/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/component/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/users/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/UserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/utils/UserUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,12 +83,6 @@
                 <item name="app" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="app" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -293,8 +263,8 @@
         <item itemvalue="Gradle.java-project-99 [bootRun]" />
         <item itemvalue="Gradle.java-project-99 [build]" />
         <item itemvalue="Gradle.java-project-99 [clean]" />
-        <item itemvalue="Makefile Target.build" />
         <item itemvalue="Gradle.java-project-99 [test]" />
+        <item itemvalue="Makefile Target.build" />
       </list>
     </recent_temporary>
   </component>
@@ -636,7 +606,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727021955445</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="added test AuthenticationControllerTest.java">
+      <created>1727028559570</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1727028559570</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update title od directories">
+      <created>1727034539889</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1727034539890</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -651,8 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update he logic with authorization and completed step 5" />
-    <MESSAGE value="completed step 6))) (with model TaskStatus.java)" />
     <MESSAGE value="almost done step 7))) (with model TaskS.java)&#10;resolve the communication issue OneToMany" />
     <MESSAGE value="almost done step 8))) (with model Label.java)&#10;and added M2M communication between models Task and Label" />
     <MESSAGE value="corrected step 8 (added Swagger)" />
@@ -676,23 +658,9 @@
     <MESSAGE value="added test-welcome" />
     <MESSAGE value="test" />
     <MESSAGE value="test2 (update Makefile)" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2 (update Makefile)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/AuthenticationController.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hexlet/code/controller/api/taskStatus/TaskStatusController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added test AuthenticationControllerTest.java" />
+    <MESSAGE value="update title od directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="update title od directories" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$TaskControllerTests.ic" NAME="TaskControllerTests Coverage Results" MODIFIED="1726687967291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
