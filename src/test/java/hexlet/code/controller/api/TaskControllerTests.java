@@ -25,6 +25,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Set;
 
 import static net.javacrumbs.jsonunit.assertj.JsonAssertions.assertThatJson;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -178,12 +179,14 @@ public class TaskControllerTests {
 
     @Test
     public void createTask() throws Exception {
+        var taskStatus = statusRepository.findBySlug("draft").get();
+
         var createDTO = new TaskCreateDTO();
         createDTO.setTitle(task.getName());
         createDTO.setContent(task.getDescription());
         createDTO.setIndex(task.getIndex());
         createDTO.setAssigneeId(user.getId());
-        createDTO.setStatus(task.getTaskStatus().getSlug());
+        createDTO.setStatus(taskStatus.getSlug());
         var request = post("/api/tasks").with(token)
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(createDTO));
