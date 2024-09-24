@@ -104,11 +104,12 @@ public class UsersControllerTests {
 
     @Test
     public void testUpdate() throws Exception {
+        var currentToken = jwt().jwt(builder -> builder.subject(user.getEmail()));
         var dto = new UserUpdateDTO();
         dto.setFirstName(JsonNullable.of("newFirstName"));
 
         var request = put("/api/users/" + user.getId())
-                .with(jwt().jwt(builder -> builder.subject(user.getEmail())))
+                .with(currentToken)
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(dto));
 
