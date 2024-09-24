@@ -33,7 +33,7 @@ import java.util.List;
 @ToString(includeFieldNames = true, onlyExplicitlyIncluded = true)
 @Getter
 @Setter
-public class User implements BaseEntity, UserDetails {
+public class User implements UserDetails, BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

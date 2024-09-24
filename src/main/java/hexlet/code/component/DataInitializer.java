@@ -9,13 +9,13 @@ import hexlet.code.repository.UsersRepository;
 import hexlet.code.service.label_service.LabelService;
 import hexlet.code.service.task_status_service.TaskStatusService;
 import hexlet.code.service.user_service.CustomUserDetailsService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class DataInitializer implements ApplicationRunner {
     private final CustomUserDetailsService usersService;
     private final UsersRepository usersRepository;

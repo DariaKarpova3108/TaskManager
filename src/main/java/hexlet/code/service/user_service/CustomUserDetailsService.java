@@ -35,17 +35,17 @@ public class CustomUserDetailsService implements UserDetailsManager {
 
     @Override
     public void updateUser(UserDetails userdata) {
-        throw new UnsupportedOperationException("Unimplemented method 'userExists'");
+        throw new UnsupportedOperationException("Unimplemented method 'updateUser'");
     }
 
     @Override
     public void deleteUser(String username) {
-        throw new UnsupportedOperationException("Unimplemented method 'userExists'");
+        throw new UnsupportedOperationException("Unimplemented method 'deleteUser'");
     }
 
     @Override
     public void changePassword(String oldPassword, String newPassword) {
-        throw new UnsupportedOperationException("Unimplemented method 'userExists'");
+        throw new UnsupportedOperationException("Unimplemented method 'changePassword'");
     }
 
     @Override

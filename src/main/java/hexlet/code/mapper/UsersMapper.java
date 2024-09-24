@@ -34,12 +34,20 @@ public abstract class UsersMapper {
 
     public abstract User map(UserDTO model);
 
-
+    @Mapping(target = "passwordDigest", source = "password")
     public abstract void update(UserUpdateDTO updateDTO, @MappingTarget User user);
 
     @BeforeMapping
     public void hashPassword(UserCreateDTO data) {
         var password = data.getPassword();
         data.setPassword(passwordEncoder.encode(password));
+    }
+
+    @BeforeMapping
+    public void hashPasswordToUpdate(UserUpdateDTO updateDTO, @MappingTarget User user) {
+        if (updateDTO.getPassword() != null && updateDTO.getPassword().isPresent()) {
+            var password = updateDTO.getPassword().get();
+            user.setPasswordDigest(passwordEncoder.encode(password));
+        }
     }
 }

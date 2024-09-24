@@ -24,10 +24,9 @@ public class UserService {
 
     public List<UserDTO> getAll() {
         var list = usersRepository.findAll();
-        var mapList = list.stream()
+        return list.stream()
                 .map(mapper::map)
                 .toList();
-        return mapList;
     }
 
     public UserDTO getUser(Long id) {
