@@ -1,6 +1,7 @@
 package hexlet.code.controller.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import hexlet.code.dto.users.UserCreateDTO;
 import hexlet.code.dto.users.UserUpdateDTO;
 import hexlet.code.model.User;
 import hexlet.code.repository.UsersRepository;
@@ -17,7 +18,6 @@ import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequ
 import org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.nio.charset.StandardCharsets;
@@ -33,7 +33,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@Transactional
 public class UsersControllerTests {
     @Autowired
     private WebApplicationContext webApplicationContext;
@@ -88,17 +87,22 @@ public class UsersControllerTests {
 
     @Test
     public void testCreate() throws Exception {
+        var dtoCreate = new UserCreateDTO();
+        dtoCreate.setEmail("test@test.com");
+        dtoCreate.setPassword("test");
+        dtoCreate.setFirstName("firstName");
+        dtoCreate.setLastName("lastName");
         var request = post("/api/users")
                 .with(token)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(user));
+                .content(objectMapper.writeValueAsString(dtoCreate));
 
         mockMvc.perform(request)
                 .andExpect(status().isCreated());
 
-        var createdUser = usersRepository.findById(user.getId()).get();
+        var createdUser = usersRepository.findByEmail(dtoCreate.getEmail()).get();
         assertThat(createdUser).isNotNull();
-        assertThat(createdUser.getEmail()).isEqualTo(user.getEmail());
+        assertThat(createdUser.getEmail()).isEqualTo(dtoCreate.getEmail());
     }
 
 

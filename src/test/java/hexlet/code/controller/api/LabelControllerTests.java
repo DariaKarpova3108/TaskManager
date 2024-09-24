@@ -18,7 +18,6 @@ import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequ
 import org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.nio.charset.StandardCharsets;
@@ -34,7 +33,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@Transactional
 public class LabelControllerTests {
     @Autowired
     private MockMvc mockMvc;
