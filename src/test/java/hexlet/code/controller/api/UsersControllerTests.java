@@ -122,8 +122,9 @@ public class UsersControllerTests {
 
     @Test
     public void testDeleteUser() throws Exception {
+        var currentToken = jwt().jwt(builder -> builder.subject(user.getEmail()));
         var request = delete("/api/users/" + user.getId())
-                .with(jwt().jwt(builder -> builder.subject(user.getEmail())));
+                .with(currentToken);
         mockMvc.perform(request)
                 .andExpect(status().isNoContent());
         assertThat(usersRepository.findById(user.getId())).isEmpty();
