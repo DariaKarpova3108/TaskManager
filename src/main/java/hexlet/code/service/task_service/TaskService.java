@@ -8,7 +8,7 @@ import hexlet.code.exception.ResourceNotFoundException;
 import hexlet.code.mapper.TaskMapper;
 import hexlet.code.repository.TaskRepository;
 import hexlet.code.specification.TaskSpecification;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,15 +16,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class TaskService {
-    @Autowired
-    private TaskRepository repository;
 
-    @Autowired
-    private TaskMapper mapper;
+    private final TaskRepository repository;
 
-    @Autowired
-    private TaskSpecification specification;
+    private  final TaskMapper mapper;
+
+    private final TaskSpecification specification;
 
     public List<TaskDTO> getListTasksWithParams(TaskParamDTO paramDTO, @RequestParam(defaultValue = "1") int page) {
         var spec = specification.build(paramDTO);

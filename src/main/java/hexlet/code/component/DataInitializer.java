@@ -2,13 +2,13 @@ package hexlet.code.component;
 
 import hexlet.code.dto.label.LabelCreateDTO;
 import hexlet.code.dto.task_statuses.TaskStatusCreateDTO;
-import hexlet.code.model.User;
+import hexlet.code.dto.users.UserCreateDTO;
 import hexlet.code.repository.LabelsRepository;
 import hexlet.code.repository.TaskStatusRepository;
 import hexlet.code.repository.UsersRepository;
 import hexlet.code.service.label_service.LabelService;
 import hexlet.code.service.task_status_service.TaskStatusService;
-import hexlet.code.service.user_service.CustomUserDetailsService;
+import hexlet.code.service.user_service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class DataInitializer implements ApplicationRunner {
-    private final CustomUserDetailsService usersService;
+    private final UserService usersService;
     private final UsersRepository usersRepository;
     private final TaskStatusService taskStatusService;
     private final TaskStatusRepository taskStatusRepository;
@@ -30,12 +30,13 @@ public class DataInitializer implements ApplicationRunner {
     }
 
     public void generateModels() {
-        var admin = new User();
+        var admin = new UserCreateDTO();
         admin.setEmail("hexlet@example.com");
-        admin.setPasswordDigest("qwerty");
+        admin.setPassword("qwerty");
         admin.setFirstName("admin");
-        usersService.createUser(admin);
-        var savedUser = usersRepository.findByEmail("hexlet@example.com").get();
+        admin.setLastName("admin");
+        usersService.create(admin);
+        var savedUser = usersRepository.findByEmail("hexlet@example.com").isPresent();
 
         var statusDraft = new TaskStatusCreateDTO();
         statusDraft.setName("Draft");

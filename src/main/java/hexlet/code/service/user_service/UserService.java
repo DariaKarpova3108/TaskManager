@@ -7,20 +7,18 @@ import hexlet.code.exception.LinkingTasksToAnotherEntityException;
 import hexlet.code.exception.ResourceNotFoundException;
 import hexlet.code.mapper.UsersMapper;
 import hexlet.code.repository.UsersRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
-    @Autowired
-    private UsersMapper mapper;
+    private final UsersMapper mapper;
 
-    @Autowired
-    private UsersRepository usersRepository;
-
+    private final UsersRepository usersRepository;
 
     public List<UserDTO> getAll() {
         var list = usersRepository.findAll();

@@ -2,16 +2,15 @@ package hexlet.code.utils;
 
 import hexlet.code.model.User;
 import hexlet.code.repository.UsersRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class UserUtils {
-
-    @Autowired
-    private UsersRepository repository;
+    private final UsersRepository repository;
 
     public User getCurrentUser() {
         var authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -23,7 +22,7 @@ public class UserUtils {
     }
 
     public User getTestUser() {
-        return  repository.findByEmail("hexlet@example.com")
+        return repository.findByEmail("hexlet@example.com")
                 .orElseThrow(() -> new RuntimeException("User not found"));
     }
 }
