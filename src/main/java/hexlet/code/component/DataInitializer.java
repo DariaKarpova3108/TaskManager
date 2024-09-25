@@ -33,8 +33,6 @@ public class DataInitializer implements ApplicationRunner {
         var admin = new UserCreateDTO();
         admin.setEmail("hexlet@example.com");
         admin.setPassword("qwerty");
-        admin.setFirstName("admin");
-        admin.setLastName("admin");
         usersService.create(admin);
         var savedUser = usersRepository.findByEmail("hexlet@example.com").isPresent();
 

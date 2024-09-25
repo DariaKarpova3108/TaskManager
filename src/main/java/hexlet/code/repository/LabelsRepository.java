@@ -9,5 +9,6 @@ import java.util.Optional;
 @Repository
 public interface LabelsRepository extends JpaRepository<Label, Long> {
     Optional<Label> findByName(String name);
+
     boolean existsByName(String name);
 }

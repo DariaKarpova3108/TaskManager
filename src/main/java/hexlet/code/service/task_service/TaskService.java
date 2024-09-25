@@ -21,7 +21,7 @@ public class TaskService {
 
     private final TaskRepository repository;
 
-    private  final TaskMapper mapper;
+    private final TaskMapper mapper;
 
     private final TaskSpecification specification;
 
