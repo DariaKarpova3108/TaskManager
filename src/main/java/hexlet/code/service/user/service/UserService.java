@@ -1,4 +1,4 @@
-package hexlet.code.service.user_service;
+package hexlet.code.service.user.service;
 
 import hexlet.code.dto.users.UserCreateDTO;
 import hexlet.code.dto.users.UserDTO;
@@ -50,7 +50,7 @@ public class UserService {
     public void delete(Long id) {
         var user = usersRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Not Found user with id: " + id));
-        if (!user.getLisTasks().isEmpty()) {
+        if (!user.getListTasks().isEmpty()) {
             throw new LinkingTasksToAnotherEntityException("User cannot be deleted, they have assigned tasks");
         }
         usersRepository.deleteById(id);

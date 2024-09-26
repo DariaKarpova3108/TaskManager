@@ -1,4 +1,4 @@
-package hexlet.code.service.task_service;
+package hexlet.code.service.task.service;
 
 import hexlet.code.dto.task.TaskCreateDTO;
 import hexlet.code.dto.task.TaskDTO;

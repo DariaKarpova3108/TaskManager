@@ -1,4 +1,4 @@
-package hexlet.code.service.user_service;
+package hexlet.code.service.user.service;
 
 import hexlet.code.exception.ResourceNotFoundException;
 import hexlet.code.repository.UsersRepository;

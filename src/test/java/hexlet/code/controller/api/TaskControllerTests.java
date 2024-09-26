@@ -211,6 +211,10 @@ public class TaskControllerTests {
 
         var updatedTask = taskRepository.findById(task.getId()).get();
         assertThat(updatedTask.getName()).isEqualTo("newName");
+        assertThat(updatedTask.getDescription()).isEqualTo(task.getDescription());
+        assertThat(updatedTask.getIndex()).isEqualTo(task.getIndex());
+        assertThat(updatedTask.getId()).isEqualTo(task.getId());
+
     }
 
     @Test

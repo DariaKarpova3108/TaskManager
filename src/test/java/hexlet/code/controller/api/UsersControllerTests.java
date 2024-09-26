@@ -122,6 +122,9 @@ public class UsersControllerTests {
 
         var updatedUser = usersRepository.findById(user.getId()).get();
         assertThat(updatedUser.getFirstName()).isEqualTo("newFirstName");
+        assertThat(updatedUser.getLastName()).isEqualTo(user.getLastName());
+        assertThat(updatedUser.getEmail()).isEqualTo(user.getEmail());
+        assertThat(updatedUser.getPasswordDigest()).isEqualTo(user.getPasswordDigest());
     }
 
     @Test

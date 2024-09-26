@@ -114,6 +114,7 @@ public class LabelControllerTests {
 
         var labelUpdate = labelsRepository.findById(label.getId()).get();
         assertThat(labelUpdate.getName()).isEqualTo("newName");
+        assertThat(labelUpdate.getId()).isEqualTo(label.getId());
     }
 
     @Test

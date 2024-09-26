@@ -9,7 +9,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -38,17 +37,18 @@ public class TaskStatus implements BaseEntity {
 
     @Size(min = 1)
     @ToString.Include
-    @NotNull
+    @Column(name = "task_status_name", nullable = false)
     private String name;
 
     @Size(min = 1)
-    @Column(unique = true, nullable = false)
     @ToString.Include
     @EqualsAndHashCode.Include
+    @Column(name = "slug", unique = true, nullable = false)
     private String slug;
 
     @CreatedDate
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @Column(name = "created_at")
     private LocalDate createdAt;
 
     @OneToMany(mappedBy = "taskStatus")

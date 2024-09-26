@@ -1,6 +1,7 @@
 package hexlet.code.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +10,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -42,31 +42,35 @@ public class User implements UserDetails, BaseEntity {
     private Long id;
 
     @ToString.Include
+    @Column(name = "first_name")
     private String firstName;
 
     @ToString.Include
+    @Column(name = "last_name")
     private String lastName;
 
     @Email
-    @NotNull
     @ToString.Include
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @NotNull
     @Size(min = 3)
+    @Column(name = "password_digest", nullable = false)
     private String passwordDigest;
 
     @CreatedDate
     @ToString.Include
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @Column(name = "created_at")
     private LocalDate createdAt;
 
     @LastModifiedDate
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @Column(name = "updated_at")
     private LocalDate updatedAt;
 
     @OneToMany(mappedBy = "assignee")
-    private List<Task> lisTasks = new ArrayList<>();
+    private List<Task> listTasks = new ArrayList<>();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

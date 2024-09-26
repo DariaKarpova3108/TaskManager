@@ -38,14 +38,15 @@ public class Label implements BaseEntity {
     @ToString.Include
     private Long id;
 
-    @Column(nullable = false, unique = true)
     @Size(min = 3, max = 1000)
     @ToString.Include
+    @Column(name = "label_name", nullable = false, unique = true)
     private String name;
 
     @CreatedDate
     @ToString.Include
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @Column(name = "created_at")
     private LocalDate createdAt;
 
     @ManyToMany(mappedBy = "labels", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)

@@ -112,7 +112,7 @@ public class TaskStatusControllerTests {
         var updateTaskStatus = taskStatusRepository.findById(taskStatusModel.getId()).get();
         assertThat(updateTaskStatus).isNotNull();
         assertThat(updateTaskStatus.getName()).isEqualTo("newName");
-
+        assertThat(updateTaskStatus.getSlug()).isEqualTo(taskStatusModel.getSlug());
     }
 
     @Test
